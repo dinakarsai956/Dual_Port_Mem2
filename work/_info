@@ -1,0 +1,417 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+!s11f vlog 2021.2_1 2021.05, May 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/user/Dual_Port_Mem2
+T_opt
+!s110 1764494273
+VRFFMJ8G5Z=1Khf0c??eX[1
+04 17 4 work memory_test_bench fast 0
+=1-000ae431a4f1-692c0bc1-638a6-dc7
+Z2 !s124 OEM100
+Z3 o-quiet -auto_acc_if_foreign -work work +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2_1;73
+R1
+T_opt1
+!s110 1764494796
+V`@GjF6@1EBB@:[]GXSK:`2
+04 34 4 work dual_port_memory_latency_testbench fast 0
+=1-000ae431a4f1-692c0dcc-6ca67-f75
+R2
+R3
+R4
+n@_opt1
+R5
+R1
+T_opt2
+!s11d top_testbench_sv_unit /home/user/Dual_Port_Mem2/work 1 dual_port 1 /home/user/Dual_Port_Mem2/work 
+!s110 1764497084
+V_D6XQOnB3h0d[P>k0UFS72
+04 13 4 work top_testbench fast 0
+=1-000ae431a4f1-692c16bc-a3f9d-19b1
+R2
+R3
+R4
+n@_opt2
+R5
+vdecoder
+Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z7 DXx4 work 21 top_testbench_sv_unit 0 22 gC]7=K1S4OB>81fWg_kRJ3
+Z8 !s110 1764497051
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 Ch8?6M_NzSGD5K]ji?AE>2
+IO6R=iCfbU379Jld^iFWdc3
+Z10 !s105 top_testbench_sv_unit
+S1
+R1
+w1764495706
+8decoder.sv
+Z11 Fdecoder.sv
+!i122 13
+L0 5 18
+Z12 OL;L;2021.2_1;73
+31
+Z13 !s108 1764497051.000000
+Z14 !s107 dual_port_memory_latency.sv|decoder.sv|dual_port_multi_bank_memory.sv|hamming_decoder.sv|hamming_encoder.sv|dual_port_memory_top_module2.sv|environment.sv|scoreboard.sv|reference.sv|monitor.sv|driver.sv|generator.sv|interface.sv|transaction.sv|pkg.sv|packet.sv|top_testbench.sv|
+Z15 !s90 top_testbench.sv|
+!i113 0
+Z16 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+Ydual_port
+R6
+R7
+R8
+R9
+r1
+!s85 0
+!i10b 1
+!s100 dI7@=H>b72n[iVHKHEN^<2
+IJ4D2:73mRQ15d7Fe0=B@G0
+R10
+S1
+R1
+w1764496379
+8interface.sv
+Z17 Finterface.sv
+!i122 13
+L0 7 0
+R12
+31
+R13
+R14
+R15
+!i113 0
+R16
+R4
+vdual_port_memory_latency
+R6
+R7
+R8
+R9
+r1
+!s85 0
+!i10b 1
+!s100 OR:nhZdl[6RPkPYj:03ac1
+I9R3FjQ:5<?MmW]njCch4K2
+R10
+S1
+R1
+w1764494445
+8dual_port_memory_latency.sv
+Z18 Fdual_port_memory_latency.sv
+!i122 13
+L0 16 135
+R12
+31
+R13
+R14
+R15
+!i113 0
+R16
+R4
+vdual_port_memory_latency_testbench
+R6
+!s110 1764494777
+!i10b 1
+!s100 ATQM5@z1C7VG^56]X7X^30
+I6SCo6fWFgLzhX4hi^cZQ11
+S1
+R1
+w1764494771
+8dual_port_memory_latency_testbench.sv
+Fdual_port_memory_latency_testbench.sv
+!i122 3
+L0 9 83
+R9
+R12
+r1
+!s85 0
+31
+!s108 1764494777.000000
+!s107 dual_port_memory_latency_testbench.sv|
+!s90 dual_port_memory_latency_testbench.sv|
+!i113 0
+R16
+R4
+vdual_port_memory_top_module2
+R6
+R7
+R8
+R9
+r1
+!s85 0
+!i10b 1
+!s100 ;N]o_M8gik3aY2XbMQVD90
+I_2hYFT:AZiigzY77DY?H60
+R10
+S1
+R1
+w1764496133
+8dual_port_memory_top_module2.sv
+Z19 Fdual_port_memory_top_module2.sv
+!i122 13
+L0 29 45
+R12
+31
+R13
+R14
+R15
+!i113 0
+R16
+R4
+vdual_port_multi_bank_memory
+R6
+R7
+R8
+R9
+r1
+!s85 0
+!i10b 1
+!s100 =D1hlPIF9aQj]THOeAcFl1
+I:;O05iQ4f_BH;i^HZVFlU3
+R10
+S1
+R1
+w1764496067
+8dual_port_multi_bank_memory.sv
+Z20 Fdual_port_multi_bank_memory.sv
+!i122 13
+L0 11 63
+R12
+31
+R13
+R14
+R15
+!i113 0
+R16
+R4
+vhamming_decoder
+R6
+R7
+R8
+R9
+r1
+!s85 0
+!i10b 1
+!s100 GCUOGe2aCf=iSQZI4PAzf2
+I]^A4SSL2HG:;m_FTGlLFj2
+R10
+S1
+R1
+w1764495338
+8hamming_decoder.sv
+Z21 Fhamming_decoder.sv
+!i122 13
+Z22 L0 8 34
+R12
+31
+R13
+R14
+R15
+!i113 0
+R16
+R4
+vhamming_decoder_testbench
+R6
+!s110 1764495497
+!i10b 1
+!s100 ?Zl^GUkgW]lY?;m]4X^[o2
+IFG[[J;afbeh=??6]RfWMH2
+S1
+R1
+w1764495488
+8hamming_decoder_testbench.sv
+Fhamming_decoder_testbench.sv
+!i122 6
+L0 10 14
+R9
+R12
+r1
+!s85 0
+31
+!s108 1764495497.000000
+!s107 hamming_decoder_testbench.sv|
+!s90 hamming_decoder_testbench.sv|
+!i113 0
+R16
+R4
+vhamming_encoder
+R6
+R7
+R8
+R9
+r1
+!s85 0
+!i10b 1
+!s100 0_OYz3KXiHKz8QP_djD^O1
+Ilg:Gl@I;MbgUUN8AKFY]D0
+R10
+S1
+R1
+w1764494943
+8hamming_encoder.sv
+Z23 Fhamming_encoder.sv
+!i122 13
+L0 8 22
+R12
+31
+R13
+R14
+R15
+!i113 0
+R16
+R4
+vmemory
+R6
+!s110 1764493807
+!i10b 1
+!s100 9C>]SO1iKfX=knHO;ofYP0
+IBngkXDDS;GM?e__g7=KkX0
+S1
+R1
+w1764493801
+8memory.sv
+Fmemory.sv
+!i122 0
+L0 12 37
+R9
+R12
+r1
+!s85 0
+31
+!s108 1764493807.000000
+!s107 memory.sv|
+!s90 memory.sv|
+!i113 0
+R16
+R4
+vmemory_test_bench
+R6
+!s110 1764494243
+!i10b 1
+!s100 F4^lFHc]e;3B4fcJ1D23C1
+I5fCFe`oQ;>_i7?FRB:?Li3
+S1
+R1
+w1764494237
+8memory_testbench.sv
+Fmemory_testbench.sv
+!i122 1
+L0 11 71
+R9
+R12
+r1
+!s85 0
+31
+!s108 1764494243.000000
+!s107 memory_testbench.sv|
+!s90 memory_testbench.sv|
+!i113 0
+R16
+R4
+vtb_hamming_encoder_8to12
+R6
+!s110 1764495239
+!i10b 1
+!s100 fWYz3ieoW6AWhD56SeiVO2
+IX5kajjCb2h:[F26okQS]g3
+S1
+R1
+w1764495230
+8hamming_encoder_testbench.sv
+Fhamming_encoder_testbench.sv
+!i122 5
+R22
+R9
+R12
+r1
+!s85 0
+31
+!s108 1764495239.000000
+!s107 hamming_encoder_testbench.sv|
+!s90 hamming_encoder_testbench.sv|
+!i113 0
+R16
+R4
+vtop_testbench
+R6
+R7
+R8
+R9
+r1
+!s85 0
+!i10b 1
+!s100 l06hDD[L<bXk7iTCQ]Mf13
+IW:=_T0]K4Dc<NI2dVI]9C3
+R10
+S1
+R1
+w1764496849
+Z24 8top_testbench.sv
+Z25 Ftop_testbench.sv
+!i122 13
+L0 8 27
+R12
+31
+R13
+R14
+R15
+!i113 0
+R16
+R4
+Xtop_testbench_sv_unit
+!s115 dual_port
+R6
+R8
+VgC]7=K1S4OB>81fWg_kRJ3
+r1
+!s85 0
+!i10b 1
+!s100 fg;i5oE1i7Fim336S;@cV2
+IgC]7=K1S4OB>81fWg_kRJ3
+!i103 1
+S1
+R1
+w1764497013
+R24
+R25
+Fpacket.sv
+Fpkg.sv
+Ftransaction.sv
+R17
+Fgenerator.sv
+Fdriver.sv
+Fmonitor.sv
+Freference.sv
+Fscoreboard.sv
+Fenvironment.sv
+R19
+R23
+R21
+R20
+R11
+R18
+!i122 13
+L0 12 0
+R12
+31
+R13
+R14
+R15
+!i113 0
+R16
+R4
