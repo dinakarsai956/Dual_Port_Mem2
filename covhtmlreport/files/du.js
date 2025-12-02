@@ -1,0 +1,2 @@
+var g_data = {"data":[{"n":"work.decoder","id":9,"zf":1,"tc":100.00,"s":100.00,"b":100.00},{"n":"work.dual_port_memory_latency","id":10,"zf":1,"tc":100.00,"s":100.00,"b":100.00,"fc":100.00,"fe":100.00},{"n":"work.dual_port_multi_bank_memory","id":8,"zf":1,"tc":100.00,"s":100.00},{"n":"work.hamming_decoder","id":7,"zf":1,"tc":100.00,"s":100.00,"b":100.00,"fc":100.00,"fe":100.00},{"n":"work.hamming_encoder","id":6,"zf":1,"tc":100.00,"s":100.00,"fe":100.00}]};
+processDuData(g_data);

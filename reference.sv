@@ -4,6 +4,9 @@
 //  port memory by including features such as latency, errror correction code,
 //  multi bank memory control implementation and compare them in scoreboard.
 //////////////////////////////////////////////////////////////////////////////////////////
+
+`ifndef REFERENCE_SV
+`define REFERENCE_SV
 class reference;
 
   // Mailboxes
@@ -154,4 +157,4 @@ class reference;
     end
   endtask
 endclass
-
+`endif

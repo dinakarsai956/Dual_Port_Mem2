@@ -2,12 +2,15 @@
 // Creating of testbench for top module by including parameter widths and
 // main_module by DUT instantition. 
 //////////////////////////////////////////////////////////////////////////////////
-`include "packet.sv"
+//`include "packet.sv"
+`include "interface.sv"
 `include "pkg.sv"
+import dual_port::*;
+
 `include "dual_port_memory_top_module2.sv"
 module top_testbench;
-  environment env;
-  dual_port dp ();
+  test t;
+  dual_port_vif dp_vif ();
   parameter WIDTH = 8;
   parameter CODE_WIDTH = 12;
   parameter ADDR_WIDTH = 5;
@@ -28,30 +31,39 @@ module top_testbench;
       .NUM_BANK(NUM_BANK),
       .DEPTH(DEPTH)
   ) dut (
-      .i_clk_a(dp.i_clk_a),
-      .i_clk_b(dp.i_clk_b),
-      .i_en_a(dp.i_en_a),
-      .i_en_b(dp.i_en_b),
-      .i_we_a(dp.i_we_a),
-      .i_we_b(dp.i_we_b),
-      .i_din_a(dp.i_din_a),
-      .i_din_b(dp.i_din_b),
-      .i_addr_a(dp.i_addr_a),
-      .i_addr_b(dp.i_addr_b),
-      .o_dout_a1(dp.o_dout_a),
-      .o_dout_b1(dp.o_dout_b)
+      .i_clk_a(dp_vif.i_clk_a),
+      .i_clk_b(dp_vif.i_clk_b),
+      .i_en_a(dp_vif.i_en_a),
+      .i_en_b(dp_vif.i_en_b),
+      .i_we_a(dp_vif.i_we_a),
+      .i_we_b(dp_vif.i_we_b),
+      .i_din_a(dp_vif.i_din_a),
+      .i_din_b(dp_vif.i_din_b),
+      .i_addr_a(dp_vif.i_addr_a),
+      .i_addr_b(dp_vif.i_addr_b),
+      .o_dout_a1(dp_vif.o_dout_a),
+      .o_dout_b1(dp_vif.o_dout_b)
   );
   initial begin
-    dp.i_clk_a = 0;
-    dp.i_clk_b = 0;
-  end
-  always #10 dp.i_clk_a = ~dp.i_clk_a;
-  always #10 dp.i_clk_b = ~dp.i_clk_b;
-  initial begin
-    env = new(dp);
-    env.main();
+    dp_vif.i_clk_a = 0;
+    dp_vif.i_clk_b = 0;
   end
   initial begin
-    #5000 $finish;
+    fork
+      forever #5 dp_vif.i_clk_a = ~dp_vif.i_clk_a;  // clock designing at time period of 5ns
+      forever #10 dp_vif.i_clk_b = ~dp_vif.i_clk_b;  // clock designing at time period of 10ns
+      begin
+        t = new(dp_vif);
+        t.main();
+      end
+    join_none
   end
+  initial begin
+    wait (t.env.sco.sco_done.triggered);
+    $display("Generated 50 transactions");
+    #10;
+    disable fork;
+    $finish;
+  end
+
 endmodule

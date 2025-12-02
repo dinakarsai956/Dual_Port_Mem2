@@ -4,6 +4,34 @@ z2
 Z0 !s99 nomlopt
 R0
 R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f vlog 2021.2_1 2021.05, May 15 2021
 13
 !s112 1.1
@@ -24,10 +52,10 @@ n@_opt
 Z5 OL;O;2021.2_1;73
 R1
 T_opt1
-!s110 1764494796
-V`@GjF6@1EBB@:[]GXSK:`2
+!s110 1764571255
+VZMa;3mc4O35ck6e3T=i0?0
 04 34 4 work dual_port_memory_latency_testbench fast 0
-=1-000ae431a4f1-692c0dcc-6ca67-f75
+=1-000ae431a4f1-692d3877-15919-12d3
 R2
 R3
 R4
@@ -35,11 +63,11 @@ n@_opt1
 R5
 R1
 T_opt2
-!s11d top_testbench_sv_unit /home/user/Dual_Port_Mem2/work 1 dual_port 1 /home/user/Dual_Port_Mem2/work 
-!s110 1764497084
-V_D6XQOnB3h0d[P>k0UFS72
+!s11d dual_port /home/user/Dual_Port_Mem2/work 1 dual_port_vif 1 /home/user/Dual_Port_Mem2/work 
+!s110 1764658652
+V8lND>KMl>:Omja2B=FT3V2
 04 13 4 work top_testbench fast 0
-=1-000ae431a4f1-692c16bc-a3f9d-19b1
+=1-000ae431a4f1-692e8ddc-55cbc-2dde
 R2
 R3
 R4
@@ -47,85 +75,92 @@ n@_opt2
 R5
 vdecoder
 Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z7 DXx4 work 21 top_testbench_sv_unit 0 22 gC]7=K1S4OB>81fWg_kRJ3
-Z8 !s110 1764497051
-Z9 VDg1SIo80bB@j0V0VzS_@n1
-r1
-!s85 0
+Z7 !s110 1764658650
 !i10b 1
-!s100 Ch8?6M_NzSGD5K]ji?AE>2
-IO6R=iCfbU379Jld^iFWdc3
-Z10 !s105 top_testbench_sv_unit
+!s100 :`<d?aEe<dnjgXjng_Dgk3
+IEDd<9Cze[CIf^9G^hgNmk1
 S1
 R1
-w1764495706
+w1764565238
 8decoder.sv
-Z11 Fdecoder.sv
-!i122 13
+Z8 Fdecoder.sv
+!i122 135
 L0 5 18
-Z12 OL;L;2021.2_1;73
-31
-Z13 !s108 1764497051.000000
-Z14 !s107 dual_port_memory_latency.sv|decoder.sv|dual_port_multi_bank_memory.sv|hamming_decoder.sv|hamming_encoder.sv|dual_port_memory_top_module2.sv|environment.sv|scoreboard.sv|reference.sv|monitor.sv|driver.sv|generator.sv|interface.sv|transaction.sv|pkg.sv|packet.sv|top_testbench.sv|
-Z15 !s90 top_testbench.sv|
-!i113 0
-Z16 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R4
-Ydual_port
-R6
-R7
-R8
-R9
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2021.2_1;73
 r1
 !s85 0
+31
+Z11 !s108 1764658650.000000
+Z12 !s107 dual_port_memory_latency.sv|decoder.sv|dual_port_multi_bank_memory.sv|hamming_decoder.sv|hamming_encoder.sv|dual_port_memory_top_module2.sv|
+Z13 !s90 -reportprogress|300|-sv|-cover|bces|dual_port_memory_top_module2.sv|
+!i113 0
+Z14 !s102 -cover bces
+Z15 o-sv -cover bces -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+Xdual_port
+!s115 dual_port_vif
+R6
+Z16 !s110 1764658612
 !i10b 1
-!s100 dI7@=H>b72n[iVHKHEN^<2
-IJ4D2:73mRQ15d7Fe0=B@G0
-R10
+!s100 KB;J?WX]do8NU2QJ_PmL30
+If`nj4Q^_Mg[M<8]A3?f8j3
 S1
 R1
-w1764496379
-8interface.sv
-Z17 Finterface.sv
-!i122 13
-L0 7 0
-R12
+w1764657681
+Z17 Fpkg.sv
+Z18 Fpacket.sv
+Ftransaction.sv
+Fgenerator.sv
+Fdriver.sv
+Fdriver_b.sv
+Fmonitor.sv
+Fmonitor_b.sv
+Freference.sv
+Fscoreboard.sv
+Fenvironment.sv
+Ftest.sv
+!i122 134
+L0 3 0
+Vf`nj4Q^_Mg[M<8]A3?f8j3
+R10
+r1
+!s85 0
 31
-R13
-R14
-R15
+Z19 !s108 1764658612.000000
+Z20 !s107 dual_port_memory_latency.sv|decoder.sv|dual_port_multi_bank_memory.sv|hamming_decoder.sv|hamming_encoder.sv|dual_port_memory_top_module2.sv|test.sv|environment.sv|scoreboard.sv|reference.sv|monitor_b.sv|monitor.sv|driver_b.sv|driver.sv|generator.sv|transaction.sv|packet.sv|pkg.sv|interface.sv|top_testbench.sv|
+Z21 !s90 top_testbench.sv|
 !i113 0
-R16
+Z22 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R4
 vdual_port_memory_latency
 R6
 R7
-R8
-R9
-r1
-!s85 0
 !i10b 1
-!s100 OR:nhZdl[6RPkPYj:03ac1
-I9R3FjQ:5<?MmW]njCch4K2
-R10
+!s100 f8`4?G07bW^;X3KdR3z@:0
+IC?X4MaDh4LUkfCU@l7A=73
 S1
 R1
-w1764494445
+Z23 w1764658510
 8dual_port_memory_latency.sv
-Z18 Fdual_port_memory_latency.sv
-!i122 13
-L0 16 135
-R12
+Z24 Fdual_port_memory_latency.sv
+!i122 135
+L0 16 133
+R9
+R10
+r1
+!s85 0
 31
+R11
+R12
 R13
+!i113 0
 R14
 R15
-!i113 0
-R16
 R4
 vdual_port_memory_latency_testbench
 R6
-!s110 1764494777
+!s110 1764571238
 !i10b 1
 !s100 ATQM5@z1C7VG^56]X7X^30
 I6SCo6fWFgLzhX4hi^cZQ11
@@ -134,96 +169,119 @@ R1
 w1764494771
 8dual_port_memory_latency_testbench.sv
 Fdual_port_memory_latency_testbench.sv
-!i122 3
+!i122 33
 L0 9 83
 R9
-R12
+R10
 r1
 !s85 0
 31
-!s108 1764494777.000000
+!s108 1764571238.000000
 !s107 dual_port_memory_latency_testbench.sv|
-!s90 dual_port_memory_latency_testbench.sv|
+!s90 -reportprogress|300|dual_port_memory_latency_testbench.sv|
 !i113 0
-R16
+R22
 R4
 vdual_port_memory_top_module2
 R6
 R7
-R8
-R9
-r1
-!s85 0
 !i10b 1
-!s100 ;N]o_M8gik3aY2XbMQVD90
-I_2hYFT:AZiigzY77DY?H60
-R10
+!s100 b[e2I7@?GPVa1<_f07G_a1
+ILlCSMCW`SBn]hmAdeBG?W2
 S1
 R1
-w1764496133
+w1764565276
 8dual_port_memory_top_module2.sv
-Z19 Fdual_port_memory_top_module2.sv
-!i122 13
-L0 29 45
-R12
+Z25 Fdual_port_memory_top_module2.sv
+!i122 135
+L0 29 69
+R9
+R10
+r1
+!s85 0
 31
+R11
+R12
 R13
+!i113 0
 R14
 R15
-!i113 0
-R16
 R4
 vdual_port_multi_bank_memory
 R6
 R7
-R8
-R9
-r1
-!s85 0
 !i10b 1
-!s100 =D1hlPIF9aQj]THOeAcFl1
-I:;O05iQ4f_BH;i^HZVFlU3
-R10
+!s100 V`bjadQa4GlQ[01MA]4[j2
+InV`T5R?VN;hWVK=mda=So3
 S1
 R1
-w1764496067
+w1764565281
 8dual_port_multi_bank_memory.sv
-Z20 Fdual_port_multi_bank_memory.sv
-!i122 13
-L0 11 63
-R12
+Z26 Fdual_port_multi_bank_memory.sv
+!i122 135
+L0 11 82
+R9
+R10
+r1
+!s85 0
 31
+R11
+R12
 R13
+!i113 0
 R14
 R15
-!i113 0
+R4
+Ydual_port_vif
+Z27 !s105 top_testbench_sv_unit
+Z28 DXx4 work 21 top_testbench_sv_unit 0 22 LH5aa:TIVjg3[5LPbG4XD3
+R6
 R16
+!i10b 1
+!s100 9A7of_iG@^=TS1f?ijV[C1
+IQ=JVX5F]baR4ZmjGP`gFb1
+S1
+R1
+w1764583514
+8interface.sv
+Z29 Finterface.sv
+!i122 134
+L0 7 0
+R9
+R10
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 0
+R22
 R4
 vhamming_decoder
 R6
 R7
-R8
-R9
-r1
-!s85 0
 !i10b 1
-!s100 GCUOGe2aCf=iSQZI4PAzf2
-I]^A4SSL2HG:;m_FTGlLFj2
-R10
+!s100 HS0^Vfi?XTeEE>LFHE:0?2
+ITOl9bK@<12hik2PSWC]]T3
 S1
 R1
-w1764495338
+w1764565297
 8hamming_decoder.sv
-Z21 Fhamming_decoder.sv
-!i122 13
-Z22 L0 8 34
-R12
+Z30 Fhamming_decoder.sv
+!i122 135
+L0 8 40
+R9
+R10
+r1
+!s85 0
 31
+R11
+R12
 R13
+!i113 0
 R14
 R15
-!i113 0
-R16
 R4
 vhamming_decoder_testbench
 R6
@@ -239,7 +297,7 @@ Fhamming_decoder_testbench.sv
 !i122 6
 L0 10 14
 R9
-R12
+R10
 r1
 !s85 0
 31
@@ -247,33 +305,32 @@ r1
 !s107 hamming_decoder_testbench.sv|
 !s90 hamming_decoder_testbench.sv|
 !i113 0
-R16
+R22
 R4
 vhamming_encoder
 R6
 R7
-R8
-R9
-r1
-!s85 0
 !i10b 1
 !s100 0_OYz3KXiHKz8QP_djD^O1
-Ilg:Gl@I;MbgUUN8AKFY]D0
-R10
+IaK_@3]TEBzB]W>=]XJ@Na2
 S1
 R1
-w1764494943
+w1764565306
 8hamming_encoder.sv
-Z23 Fhamming_encoder.sv
-!i122 13
+Z31 Fhamming_encoder.sv
+!i122 135
 L0 8 22
-R12
+R9
+R10
+r1
+!s85 0
 31
+R11
+R12
 R13
+!i113 0
 R14
 R15
-!i113 0
-R16
 R4
 vmemory
 R6
@@ -289,7 +346,7 @@ Fmemory.sv
 !i122 0
 L0 12 37
 R9
-R12
+R10
 r1
 !s85 0
 31
@@ -297,7 +354,7 @@ r1
 !s107 memory.sv|
 !s90 memory.sv|
 !i113 0
-R16
+R22
 R4
 vmemory_test_bench
 R6
@@ -313,7 +370,7 @@ Fmemory_testbench.sv
 !i122 1
 L0 11 71
 R9
-R12
+R10
 r1
 !s85 0
 31
@@ -321,7 +378,32 @@ r1
 !s107 memory_testbench.sv|
 !s90 memory_testbench.sv|
 !i113 0
-R16
+R22
+R4
+Xpacket_sv_unit
+R6
+!s110 1764589991
+VmgKPd[eGD0I=XB=QSN:j?0
+r1
+!s85 0
+!i10b 1
+!s100 goKnlcRWJ;Q`dR3A7kFPF0
+ImgKPd[eGD0I=XB=QSN:j?0
+!i103 1
+S1
+R1
+w1764565429
+8packet.sv
+R18
+!i122 79
+L0 12 0
+R10
+31
+!s108 1764589991.000000
+!s107 packet.sv|
+!s90 packet.sv|
+!i113 0
+R22
 R4
 vtb_hamming_encoder_8to12
 R6
@@ -335,9 +417,9 @@ w1764495230
 8hamming_encoder_testbench.sv
 Fhamming_encoder_testbench.sv
 !i122 5
-R22
+L0 8 34
 R9
-R12
+R10
 r1
 !s85 0
 31
@@ -345,73 +427,66 @@ r1
 !s107 hamming_encoder_testbench.sv|
 !s90 hamming_encoder_testbench.sv|
 !i113 0
-R16
+R22
 R4
 vtop_testbench
 R6
-R7
-R8
+Z32 DXx4 work 9 dual_port 0 22 f`nj4Q^_Mg[M<8]A3?f8j3
+R28
+R16
 R9
 r1
 !s85 0
 !i10b 1
-!s100 l06hDD[L<bXk7iTCQ]Mf13
-IW:=_T0]K4Dc<NI2dVI]9C3
-R10
+!s100 ;W3mII>9LGC]FQkM1^;Ea3
+Iz=]5J[H9GXIMNo[hiolUm0
+R27
 S1
 R1
-w1764496849
-Z24 8top_testbench.sv
-Z25 Ftop_testbench.sv
-!i122 13
-L0 8 27
-R12
+w1764657265
+Z33 8top_testbench.sv
+Z34 Ftop_testbench.sv
+!i122 134
+L0 11 59
+R10
 31
-R13
-R14
-R15
+R19
+R20
+R21
 !i113 0
-R16
+R22
 R4
 Xtop_testbench_sv_unit
-!s115 dual_port
 R6
-R8
-VgC]7=K1S4OB>81fWg_kRJ3
+R32
+R16
+VLH5aa:TIVjg3[5LPbG4XD3
 r1
 !s85 0
 !i10b 1
-!s100 fg;i5oE1i7Fim336S;@cV2
-IgC]7=K1S4OB>81fWg_kRJ3
+!s100 7l]G1P3Ld@>BLaM=Xm`AK3
+ILH5aa:TIVjg3[5LPbG4XD3
 !i103 1
 S1
 R1
-w1764497013
-R24
-R25
-Fpacket.sv
-Fpkg.sv
-Ftransaction.sv
-R17
-Fgenerator.sv
-Fdriver.sv
-Fmonitor.sv
-Freference.sv
-Fscoreboard.sv
-Fenvironment.sv
-R19
 R23
-R21
-R20
-R11
-R18
-!i122 13
-L0 12 0
-R12
+R33
+R34
+R29
+R17
+R25
+R31
+R30
+R26
+R8
+R24
+!i122 134
+L0 8 0
+R10
 31
-R13
-R14
-R15
+R19
+R20
+R21
 !i113 0
-R16
+R22
 R4

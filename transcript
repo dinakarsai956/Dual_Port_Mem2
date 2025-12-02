@@ -13,585 +13,1062 @@
 # //  18 U.S.C. Section 1905.
 # //
 # vsim -voptargs="+acc" top_testbench 
-# Start time: 15:34:44 on Nov 30,2025
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 12:27:07 on Dec 02,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
 # Loading sv_std.std
+# Loading work.dual_port_vif(fast)
+# Loading work.dual_port(fast)
 # Loading work.top_testbench_sv_unit(fast)
 # Loading work.top_testbench(fast)
-# Loading work.dual_port(fast__2)
+# Loading work.dual_port_vif(fast__2)
 # Loading work.dual_port_memory_top_module2(fast)
 # Loading work.hamming_encoder(fast)
 # Loading work.hamming_decoder(fast)
 # Loading work.dual_port_multi_bank_memory(fast)
 # Loading work.decoder(fast)
 # Loading work.dual_port_memory_latency(fast)
-# Loading work.dual_port(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'i_din_a'. The port definition is at: dual_port_memory_top_module2.sv(42).
-#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'i_din_b'. The port definition is at: dual_port_memory_top_module2.sv(42).
-#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (10) for port 'i_addr_a'. The port definition is at: dual_port_memory_top_module2.sv(43).
-#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (10) for port 'i_addr_b'. The port definition is at: dual_port_memory_top_module2.sv(43).
-#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'o_dout_a1'. The port definition is at: dual_port_memory_top_module2.sv(44).
-#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'o_dout_b1'. The port definition is at: dual_port_memory_top_module2.sv(44).
-#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 20
-add wave -position insertpoint sim:/top_testbench/dut/*
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'i_din_a'. The port definition is at: dual_port_memory_top_module2.sv(46).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'i_din_b'. The port definition is at: dual_port_memory_top_module2.sv(47).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (10) for port 'i_addr_a'. The port definition is at: dual_port_memory_top_module2.sv(48).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (10) for port 'i_addr_b'. The port definition is at: dual_port_memory_top_module2.sv(49).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'o_dout_a1'. The port definition is at: dual_port_memory_top_module2.sv(50).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'o_dout_b1'. The port definition is at: dual_port_memory_top_module2.sv(51).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+add wave -position insertpoint  \
+sim:/top_testbench/dut/WIDTH \
+sim:/top_testbench/dut/CODE_WIDTH \
+sim:/top_testbench/dut/ADDR_WIDTH \
+sim:/top_testbench/dut/WRITE_LATENCY_A \
+sim:/top_testbench/dut/READ_LATENCY_A \
+sim:/top_testbench/dut/WRITE_LATENCY_B \
+sim:/top_testbench/dut/READ_LATENCY_B \
+sim:/top_testbench/dut/NUM_BANK \
+sim:/top_testbench/dut/DEPTH \
+sim:/top_testbench/dut/i_clk_a \
+sim:/top_testbench/dut/i_clk_b \
+sim:/top_testbench/dut/i_en_a \
+sim:/top_testbench/dut/i_en_b \
+sim:/top_testbench/dut/i_we_a \
+sim:/top_testbench/dut/i_we_b \
+sim:/top_testbench/dut/i_din_a \
+sim:/top_testbench/dut/i_din_b \
+sim:/top_testbench/dut/i_addr_a \
+sim:/top_testbench/dut/i_addr_b \
+sim:/top_testbench/dut/o_dout_a1 \
+sim:/top_testbench/dut/o_dout_b1 \
+sim:/top_testbench/dut/out_a \
+sim:/top_testbench/dut/out_b \
+sim:/top_testbench/dut/e_out_a \
+sim:/top_testbench/dut/e_out_b \
+sim:/top_testbench/dut/o_error_detected_a \
+sim:/top_testbench/dut/o_error_detected_b \
+sim:/top_testbench/dut/o_error_corrected_a \
+sim:/top_testbench/dut/o_error_corrected_b \
+sim:/top_testbench/dut/m_dout_a \
+sim:/top_testbench/dut/m_dout_b
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.dual_port_vif(fast)
+# Loading work.dual_port(fast)
 # Loading work.top_testbench_sv_unit(fast)
 # Loading work.top_testbench(fast)
-# Loading work.dual_port(fast__2)
+# Loading work.dual_port_vif(fast__2)
 # Loading work.dual_port_memory_top_module2(fast)
 # Loading work.hamming_encoder(fast)
 # Loading work.hamming_decoder(fast)
 # Loading work.dual_port_multi_bank_memory(fast)
 # Loading work.decoder(fast)
 # Loading work.dual_port_memory_latency(fast)
-# Loading work.dual_port(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'i_din_a'. The port definition is at: dual_port_memory_top_module2.sv(42).
-#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'i_din_b'. The port definition is at: dual_port_memory_top_module2.sv(42).
-#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (10) for port 'i_addr_a'. The port definition is at: dual_port_memory_top_module2.sv(43).
-#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (10) for port 'i_addr_b'. The port definition is at: dual_port_memory_top_module2.sv(43).
-#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'o_dout_a1'. The port definition is at: dual_port_memory_top_module2.sv(44).
-#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'o_dout_b1'. The port definition is at: dual_port_memory_top_module2.sv(44).
-#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'i_din_a'. The port definition is at: dual_port_memory_top_module2.sv(46).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'i_din_b'. The port definition is at: dual_port_memory_top_module2.sv(47).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (10) for port 'i_addr_a'. The port definition is at: dual_port_memory_top_module2.sv(48).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (10) for port 'i_addr_b'. The port definition is at: dual_port_memory_top_module2.sv(49).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'o_dout_a1'. The port definition is at: dual_port_memory_top_module2.sv(50).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'o_dout_b1'. The port definition is at: dual_port_memory_top_module2.sv(51).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
 run -all
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 67 	 i_din_b = 245 	 i_addr_a = 497 	 i_addr_b = 662
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 15 	 i_din_b = 252 	 i_addr_a = 419 	 i_addr_b = 558
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 60 	 i_din_b = 218 	 i_addr_a = 249 	 i_addr_b = 911
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 15 	 i_din_b = 187 	 i_addr_a = 311 	 i_addr_b = 752
-# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 33 	 i_din_b = 244 	 i_addr_a = 448 	 i_addr_b = 935
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 79 	 i_din_b = 196 	 i_addr_a = 138 	 i_addr_b = 890
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 43 	 i_din_b = 237 	 i_addr_a = 490 	 i_addr_b = 520
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 164 	 i_addr_a = 272 	 i_addr_b = 630
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 52 	 i_din_b = 143 	 i_addr_a = 45 	 i_addr_b = 900
-# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 96 	 i_din_b = 243 	 i_addr_a = 454 	 i_addr_b = 872
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 83 	 i_din_b = 231 	 i_addr_a = 354 	 i_addr_b = 605
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 92 	 i_din_b = 230 	 i_addr_a = 461 	 i_addr_b = 622
-# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 48 	 i_din_b = 209 	 i_addr_a = 118 	 i_addr_b = 715
-# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 76 	 i_din_b = 170 	 i_addr_a = 155 	 i_addr_b = 664
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 69 	 i_din_b = 211 	 i_addr_a = 442 	 i_addr_b = 961
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 60 	 i_din_b = 134 	 i_addr_a = 139 	 i_addr_b = 860
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 108 	 i_din_b = 255 	 i_addr_a = 402 	 i_addr_b = 692
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 113 	 i_din_b = 157 	 i_addr_a = 374 	 i_addr_b = 785
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 29 	 i_din_b = 198 	 i_addr_a = 195 	 i_addr_b = 650
-# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 101 	 i_din_b = 197 	 i_addr_a = 9 	 i_addr_b = 857
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 89 	 i_din_b = 208 	 i_addr_a = 119 	 i_addr_b = 665
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 14 	 i_din_b = 254 	 i_addr_a = 279 	 i_addr_b = 974
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 46 	 i_din_b = 245 	 i_addr_a = 179 	 i_addr_b = 958
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 68 	 i_din_b = 250 	 i_addr_a = 143 	 i_addr_b = 903
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 7 	 i_din_b = 254 	 i_addr_a = 340 	 i_addr_b = 633
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 32 	 i_din_b = 182 	 i_addr_a = 63 	 i_addr_b = 715
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 87 	 i_din_b = 232 	 i_addr_a = 212 	 i_addr_b = 1004
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 54 	 i_din_b = 151 	 i_addr_a = 489 	 i_addr_b = 676
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 24 	 i_din_b = 183 	 i_addr_a = 426 	 i_addr_b = 801
-# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 46 	 i_din_b = 222 	 i_addr_a = 47 	 i_addr_b = 801
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 77 	 i_din_b = 187 	 i_addr_a = 262 	 i_addr_b = 538
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 39 	 i_din_b = 168 	 i_addr_a = 487 	 i_addr_b = 1018
-# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 27 	 i_din_b = 245 	 i_addr_a = 361 	 i_addr_b = 875
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 42 	 i_din_b = 239 	 i_addr_a = 167 	 i_addr_b = 579
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 1 	 i_din_b = 123 	 i_addr_a = 186 	 i_addr_b = 1017
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 52 	 i_din_b = 191 	 i_addr_a = 462 	 i_addr_b = 584
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 34 	 i_din_b = 165 	 i_addr_a = 459 	 i_addr_b = 691
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 91 	 i_din_b = 151 	 i_addr_a = 271 	 i_addr_b = 813
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 84 	 i_din_b = 185 	 i_addr_a = 298 	 i_addr_b = 559
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 39 	 i_din_b = 202 	 i_addr_a = 55 	 i_addr_b = 549
-# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 46 	 i_din_b = 160 	 i_addr_a = 357 	 i_addr_b = 844
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 53 	 i_din_b = 180 	 i_addr_a = 230 	 i_addr_b = 908
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 18 	 i_din_b = 172 	 i_addr_a = 244 	 i_addr_b = 924
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 14 	 i_din_b = 143 	 i_addr_a = 4 	 i_addr_b = 938
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 102 	 i_din_b = 175 	 i_addr_a = 165 	 i_addr_b = 1022
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 59 	 i_din_b = 208 	 i_addr_a = 230 	 i_addr_b = 938
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 89 	 i_din_b = 222 	 i_addr_a = 461 	 i_addr_b = 606
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 118 	 i_din_b = 144 	 i_addr_a = 305 	 i_addr_b = 524
-# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 39 	 i_din_b = 176 	 i_addr_a = 336 	 i_addr_b = 837
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-# [GEN] number of transactions          50
-# i_en_a = 0 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 0 	 i_addr_a = 0 	 i_addr_b = 0
-#                   40[SCO] addr_a = 0 	 din_a = 0 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=0 bank=0 data=0x0 err=0 time=40
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 4 	 i_din_b = 188 	 i_addr_a = 401 	 i_addr_b = 999
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 51 	 i_din_b = 139 	 i_addr_a = 378 	 i_addr_b = 924
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 31 	 i_din_b = 239 	 i_addr_a = 416 	 i_addr_b = 952
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 76 	 i_din_b = 204 	 i_addr_a = 140 	 i_addr_b = 536
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 12 	 i_din_b = 163 	 i_addr_a = 41 	 i_addr_b = 889
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 104 	 i_din_b = 200 	 i_addr_a = 70 	 i_addr_b = 534
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 115 	 i_din_b = 225 	 i_addr_a = 132 	 i_addr_b = 729
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 93 	 i_din_b = 223 	 i_addr_a = 182 	 i_addr_b = 828
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 100 	 i_din_b = 155 	 i_addr_a = 423 	 i_addr_b = 822
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 115 	 i_din_b = 150 	 i_addr_a = 263 	 i_addr_b = 1022
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 84 	 i_din_b = 186 	 i_addr_a = 95 	 i_addr_b = 735
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 117 	 i_din_b = 246 	 i_addr_a = 89 	 i_addr_b = 515
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 18 	 i_din_b = 129 	 i_addr_a = 138 	 i_addr_b = 830
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 57 	 i_din_b = 180 	 i_addr_a = 239 	 i_addr_b = 846
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 42 	 i_din_b = 245 	 i_addr_a = 176 	 i_addr_b = 759
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 86 	 i_din_b = 146 	 i_addr_a = 411 	 i_addr_b = 578
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 25 	 i_din_b = 210 	 i_addr_a = 341 	 i_addr_b = 889
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 102 	 i_din_b = 226 	 i_addr_a = 370 	 i_addr_b = 883
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 121 	 i_din_b = 216 	 i_addr_a = 461 	 i_addr_b = 955
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 55 	 i_din_b = 246 	 i_addr_a = 170 	 i_addr_b = 746
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 22 	 i_din_b = 220 	 i_addr_a = 388 	 i_addr_b = 1003
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 10 	 i_din_b = 146 	 i_addr_a = 322 	 i_addr_b = 574
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 11 	 i_din_b = 239 	 i_addr_a = 297 	 i_addr_b = 581
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 42 	 i_din_b = 248 	 i_addr_a = 209 	 i_addr_b = 514
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 62 	 i_din_b = 255 	 i_addr_a = 114 	 i_addr_b = 945
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 76 	 i_din_b = 151 	 i_addr_a = 342 	 i_addr_b = 748
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 98 	 i_din_b = 136 	 i_addr_a = 358 	 i_addr_b = 799
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 93 	 i_din_b = 247 	 i_addr_a = 269 	 i_addr_b = 732
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 26 	 i_din_b = 250 	 i_addr_a = 306 	 i_addr_b = 629
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 72 	 i_din_b = 138 	 i_addr_a = 287 	 i_addr_b = 940
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 32 	 i_din_b = 140 	 i_addr_a = 280 	 i_addr_b = 570
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 85 	 i_din_b = 132 	 i_addr_a = 114 	 i_addr_b = 731
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 68 	 i_din_b = 248 	 i_addr_a = 323 	 i_addr_b = 987
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 71 	 i_din_b = 125 	 i_addr_a = 90 	 i_addr_b = 961
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 23 	 i_din_b = 124 	 i_addr_a = 389 	 i_addr_b = 797
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 61 	 i_din_b = 220 	 i_addr_a = 174 	 i_addr_b = 828
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 6 	 i_din_b = 191 	 i_addr_a = 352 	 i_addr_b = 658
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 75 	 i_din_b = 152 	 i_addr_a = 105 	 i_addr_b = 805
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 69 	 i_din_b = 164 	 i_addr_a = 183 	 i_addr_b = 649
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 49 	 i_din_b = 161 	 i_addr_a = 282 	 i_addr_b = 675
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 122 	 i_din_b = 195 	 i_addr_a = 242 	 i_addr_b = 546
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 34 	 i_din_b = 195 	 i_addr_a = 187 	 i_addr_b = 621
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 95 	 i_din_b = 166 	 i_addr_a = 498 	 i_addr_b = 806
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 80 	 i_din_b = 177 	 i_addr_a = 379 	 i_addr_b = 954
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 66 	 i_din_b = 146 	 i_addr_a = 41 	 i_addr_b = 586
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 62 	 i_din_b = 244 	 i_addr_a = 306 	 i_addr_b = 810
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 92 	 i_din_b = 233 	 i_addr_a = 331 	 i_addr_b = 1014
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 38 	 i_din_b = 207 	 i_addr_a = 239 	 i_addr_b = 767
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 25 	 i_din_b = 239 	 i_addr_a = 344 	 i_addr_b = 536
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 5 	 i_din_b = 223 	 i_addr_a = 10 	 i_addr_b = 749
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 4 	 i_din_b = 0 	 i_addr_a = 401 	 i_addr_b = 0
+# [REF][A] WRITE addr=401 bank=1 enc=0x604 time=10
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 188 	 i_addr_a = 0 	 i_addr_b = 999
+# i_en_a = 0 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 51 	 i_din_b = 0 	 i_addr_a = 378 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=20
+# [REF][A] WRITE addr=378 bank=2 enc=0x533 time=20
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=999 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 31 	 i_din_b = 0 	 i_addr_a = 416 	 i_addr_b = 0
+# [REF][A] READ  addr=416 bank=0 data=0x0 err=0 time=30
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 139 	 i_addr_a = 0 	 i_addr_b = 924
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 76 	 i_din_b = 0 	 i_addr_a = 140 	 i_addr_b = 0
 # [REF][B] READ  addr=0 bank=0 data=0x0 err=0 time=40
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 67 	 i_din_b = 245 	 i_addr_a = 497 	 i_addr_b = 662
-# [REF][A] WRITE addr=497 bank=1 enc=0xd43 time=80
-# [REF][B] WRITE addr=662 bank=2 enc=0x1f5 time=80
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 15 	 i_din_b = 252 	 i_addr_a = 419 	 i_addr_b = 558
-# [REF][A] WRITE addr=419 bank=3 enc=0x70f time=120
-# [REF][B] WRITE addr=558 bank=2 enc=0x5fc time=120
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 60 	 i_din_b = 218 	 i_addr_a = 249 	 i_addr_b = 911
-#                  160[MON] addr_a = 60 	 din_a = 249 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=249 bank=1 data=0x0 err=0 time=160
-# [REF][B] WRITE addr=911 bank=3 enc=0xcda time=160
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 15 	 i_din_b = 187 	 i_addr_a = 311 	 i_addr_b = 752
-#                  200[MON] addr_a = 15 	 din_a = 311 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=311 bank=3 data=0x0 err=0 time=200
-# [REF][B] WRITE addr=752 bank=0 enc=0xebb time=200
-# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 33 	 i_din_b = 244 	 i_addr_a = 448 	 i_addr_b = 935
-#                  240[MON] addr_a = 33 	 din_a = 448 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=448 bank=0 data=0x0 err=0 time=240
-# [REF][B] WRITE addr=935 bank=3 enc=0x2f4 time=240
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 79 	 i_din_b = 196 	 i_addr_a = 138 	 i_addr_b = 890
-# [REF][A] WRITE addr=138 bank=2 enc=0xc4f time=280
-# [REF][B] READ  addr=138 bank=2 data=0x0 err=0 time=280
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 43 	 i_din_b = 237 	 i_addr_a = 490 	 i_addr_b = 520
-#                  320[MON] addr_a = 43 	 din_a = 490 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=490 bank=2 data=0x0 err=0 time=320
-# [REF][B] WRITE addr=520 bank=0 enc=0xfed time=320
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 164 	 i_addr_a = 272 	 i_addr_b = 630
-#                  360[SCO] addr_a = 0 	 din_a = 272 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=272 bank=0 data=0x0 err=0 time=360
-# [REF][B] READ  addr=272 bank=2 data=0x0 err=0 time=360
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 52 	 i_din_b = 143 	 i_addr_a = 45 	 i_addr_b = 900
-# [REF][A] WRITE addr=45 bank=1 enc=0x534 time=400
-# [REF][B] READ  addr=45 bank=0 data=0x0 err=0 time=400
-# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 96 	 i_din_b = 243 	 i_addr_a = 454 	 i_addr_b = 872
-# [REF][A] WRITE addr=454 bank=2 enc=0x160 time=440
-# [REF][B] WRITE addr=872 bank=0 enc=0x2f3 time=440
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 83 	 i_din_b = 231 	 i_addr_a = 354 	 i_addr_b = 605
-#                  480[MON] addr_a = 83 	 din_a = 354 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=354 bank=2 data=0x0 err=0 time=480
-# [REF][B] READ  addr=354 bank=1 data=0x0 err=0 time=480
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 92 	 i_din_b = 230 	 i_addr_a = 461 	 i_addr_b = 622
-# [REF][A] WRITE addr=461 bank=1 enc=0x35c time=520
-# [REF][B] WRITE addr=622 bank=2 enc=0xee6 time=520
-# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 48 	 i_din_b = 209 	 i_addr_a = 118 	 i_addr_b = 715
-#                  560[MON] addr_a = 48 	 din_a = 118 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=118 bank=2 data=0x0 err=0 time=560
-# [REF][B] WRITE addr=715 bank=3 enc=0xdd1 time=560
-# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 76 	 i_din_b = 170 	 i_addr_a = 155 	 i_addr_b = 664
-#                  600[MON] addr_a = 76 	 din_a = 155 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=155 bank=3 data=0x0 err=0 time=600
-# [REF][B] READ  addr=155 bank=0 data=0x0 err=0 time=600
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 69 	 i_din_b = 211 	 i_addr_a = 442 	 i_addr_b = 961
-# [REF][A] WRITE addr=442 bank=2 enc=0xe45 time=640
-# [REF][B] WRITE addr=961 bank=1 enc=0x8d3 time=640
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 60 	 i_din_b = 134 	 i_addr_a = 139 	 i_addr_b = 860
-# [REF][A] WRITE addr=139 bank=3 enc=0x23c time=680
-# [REF][B] READ  addr=139 bank=0 data=0x0 err=0 time=680
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 108 	 i_din_b = 255 	 i_addr_a = 402 	 i_addr_b = 692
-#                  720[MON] addr_a = 108 	 din_a = 402 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=402 bank=2 data=0x0 err=0 time=720
-# [REF][B] WRITE addr=692 bank=0 enc=0x3ff time=720
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 113 	 i_din_b = 157 	 i_addr_a = 374 	 i_addr_b = 785
-# [REF][A] WRITE addr=374 bank=2 enc=0xb71 time=760
-# [REF][B] READ  addr=374 bank=1 data=0x0 err=0 time=760
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 29 	 i_din_b = 198 	 i_addr_a = 195 	 i_addr_b = 650
-# [REF][A] WRITE addr=195 bank=3 enc=0xb1d time=800
-# [REF][B] WRITE addr=650 bank=2 enc=0x4c6 time=800
-# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 101 	 i_din_b = 197 	 i_addr_a = 9 	 i_addr_b = 857
-# [REF][A] WRITE addr=9 bank=1 enc=0x465 time=840
-# [REF][B] WRITE addr=857 bank=1 enc=0x2c5 time=840
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 89 	 i_din_b = 208 	 i_addr_a = 119 	 i_addr_b = 665
-# [REF][A] WRITE addr=119 bank=3 enc=0x659 time=880
-# [REF][B] WRITE addr=665 bank=1 enc=0xed0 time=880
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 14 	 i_din_b = 254 	 i_addr_a = 279 	 i_addr_b = 974
-#                  920[MON] addr_a = 14 	 din_a = 279 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=279 bank=3 data=0x0 err=0 time=920
-# [REF][B] WRITE addr=974 bank=2 enc=0xfe time=920
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 46 	 i_din_b = 245 	 i_addr_a = 179 	 i_addr_b = 958
-#                  960[MON] addr_a = 46 	 din_a = 179 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=179 bank=3 data=0x0 err=0 time=960
-# [REF][B] WRITE addr=958 bank=2 enc=0x1f5 time=960
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 68 	 i_din_b = 250 	 i_addr_a = 143 	 i_addr_b = 903
-# [REF][A] WRITE addr=143 bank=3 enc=0xd44 time=1000
-# [REF][B] READ  addr=143 bank=3 data=0x0 err=0 time=1000
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 7 	 i_din_b = 254 	 i_addr_a = 340 	 i_addr_b = 633
-#                 1040[MON] addr_a = 7 	 din_a = 340 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=340 bank=0 data=0x0 err=0 time=1040
-# [REF][B] WRITE addr=633 bank=1 enc=0xfe time=1040
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 32 	 i_din_b = 182 	 i_addr_a = 63 	 i_addr_b = 715
-# [REF][A] WRITE addr=63 bank=3 enc=0xa20 time=1080
-# [REF][B] READ  addr=63 bank=3 data=0xd1 err=0 time=1080
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 87 	 i_din_b = 232 	 i_addr_a = 212 	 i_addr_b = 1004
-#                 1120[MON] addr_a = 87 	 din_a = 212 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=212 bank=0 data=0x0 err=0 time=1120
-# [REF][B] WRITE addr=1004 bank=0 enc=0xae8 time=1120
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 54 	 i_din_b = 151 	 i_addr_a = 489 	 i_addr_b = 676
-#                 1160[MON] addr_a = 54 	 din_a = 489 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=489 bank=1 data=0x0 err=0 time=1160
-# [REF][B] WRITE addr=676 bank=0 enc=0x597 time=1160
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 24 	 i_din_b = 183 	 i_addr_a = 426 	 i_addr_b = 801
-#                 1200[MON] addr_a = 24 	 din_a = 426 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=426 bank=2 data=0x0 err=0 time=1200
-# [REF][B] WRITE addr=801 bank=1 enc=0xfb7 time=1200
-# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 46 	 i_din_b = 222 	 i_addr_a = 47 	 i_addr_b = 801
-# [REF][A] WRITE addr=47 bank=3 enc=0xe2e time=1240
-# [REF][B] WRITE addr=801 bank=1 enc=0xade time=1240
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 77 	 i_din_b = 187 	 i_addr_a = 262 	 i_addr_b = 538
-#                 1280[MON] addr_a = 77 	 din_a = 262 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=262 bank=2 data=0x0 err=0 time=1280
-# [REF][B] READ  addr=262 bank=2 data=0x0 err=0 time=1280
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 39 	 i_din_b = 168 	 i_addr_a = 487 	 i_addr_b = 1018
-# [REF][A] WRITE addr=487 bank=3 enc=0xa27 time=1320
-# [REF][B] READ  addr=487 bank=2 data=0x0 err=0 time=1320
-# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 27 	 i_din_b = 245 	 i_addr_a = 361 	 i_addr_b = 875
-#                 1360[MON] addr_a = 27 	 din_a = 361 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=361 bank=1 data=0x0 err=0 time=1360
-# [REF][B] WRITE addr=875 bank=3 enc=0x1f5 time=1360
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 42 	 i_din_b = 239 	 i_addr_a = 167 	 i_addr_b = 579
-# [REF][A] WRITE addr=167 bank=3 enc=0x82a time=1400
-# [REF][B] READ  addr=167 bank=3 data=0x0 err=0 time=1400
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 1 	 i_din_b = 123 	 i_addr_a = 186 	 i_addr_b = 1017
-# [REF][A] WRITE addr=186 bank=2 enc=0x301 time=1440
-# [REF][B] READ  addr=186 bank=1 data=0x0 err=0 time=1440
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 52 	 i_din_b = 191 	 i_addr_a = 462 	 i_addr_b = 584
-# [REF][A] WRITE addr=462 bank=2 enc=0x534 time=1480
-# [REF][B] READ  addr=462 bank=0 data=0x0 err=0 time=1480
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 34 	 i_din_b = 165 	 i_addr_a = 459 	 i_addr_b = 691
-#                 1520[MON] addr_a = 34 	 din_a = 459 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=459 bank=3 data=0x0 err=0 time=1520
-# [REF][B] READ  addr=459 bank=3 data=0x0 err=0 time=1520
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 91 	 i_din_b = 151 	 i_addr_a = 271 	 i_addr_b = 813
-# [REF][A] WRITE addr=271 bank=3 enc=0x35b time=1560
-# [REF][B] WRITE addr=813 bank=1 enc=0x597 time=1560
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 84 	 i_din_b = 185 	 i_addr_a = 298 	 i_addr_b = 559
-# [REF][A] WRITE addr=298 bank=2 enc=0x454 time=1600
-# [REF][B] READ  addr=298 bank=3 data=0x0 err=0 time=1600
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 39 	 i_din_b = 202 	 i_addr_a = 55 	 i_addr_b = 549
-#                 1640[MON] addr_a = 39 	 din_a = 55 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=55 bank=3 data=0x0 err=0 time=1640
-# [REF][B] READ  addr=55 bank=1 data=0x0 err=0 time=1640
-# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 46 	 i_din_b = 160 	 i_addr_a = 357 	 i_addr_b = 844
-#                 1680[MON] addr_a = 46 	 din_a = 357 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=357 bank=1 data=0x0 err=0 time=1680
-# [REF][B] READ  addr=357 bank=0 data=0x0 err=0 time=1680
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 53 	 i_din_b = 180 	 i_addr_a = 230 	 i_addr_b = 908
-#                 1720[MON] addr_a = 53 	 din_a = 230 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=230 bank=2 data=0x0 err=0 time=1720
-# [REF][B] READ  addr=230 bank=0 data=0x0 err=0 time=1720
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 18 	 i_din_b = 172 	 i_addr_a = 244 	 i_addr_b = 924
-#                 1760[MON] addr_a = 18 	 din_a = 244 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=244 bank=0 data=0x0 err=0 time=1760
-# [REF][B] WRITE addr=924 bank=0 enc=0x7ac time=1760
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 14 	 i_din_b = 143 	 i_addr_a = 4 	 i_addr_b = 938
-#                 1800[MON] addr_a = 14 	 din_a = 4 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=4 bank=0 data=0x0 err=0 time=1800
-# [REF][B] WRITE addr=938 bank=2 enc=0xb8f time=1800
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 102 	 i_din_b = 175 	 i_addr_a = 165 	 i_addr_b = 1022
-#                 1840[MON] addr_a = 102 	 din_a = 165 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=165 bank=1 data=0x0 err=0 time=1840
-# [REF][B] READ  addr=165 bank=2 data=0x0 err=0 time=1840
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 59 	 i_din_b = 208 	 i_addr_a = 230 	 i_addr_b = 938
-#                 1880[MON] addr_a = 59 	 din_a = 230 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=230 bank=2 data=0x0 err=0 time=1880
-# [REF][B] WRITE addr=938 bank=2 enc=0xed0 time=1880
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 89 	 i_din_b = 222 	 i_addr_a = 461 	 i_addr_b = 606
-# [REF][A] WRITE addr=461 bank=1 enc=0x659 time=1920
-# [REF][B] WRITE addr=606 bank=2 enc=0xade time=1920
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 118 	 i_din_b = 144 	 i_addr_a = 305 	 i_addr_b = 524
-#                 1960[MON] addr_a = 118 	 din_a = 305 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=305 bank=1 data=0x0 err=0 time=1960
-# [REF][B] WRITE addr=524 bank=0 enc=0x590 time=1960
-# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 39 	 i_din_b = 176 	 i_addr_a = 336 	 i_addr_b = 837
-# [REF][A] WRITE addr=336 bank=0 enc=0xa27 time=2000
-# [REF][B] WRITE addr=837 bank=1 enc=0xfb0 time=2000
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2040[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2040
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2040
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2080[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2080
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2080
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2120[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2120
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2120
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2160[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2160
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2160
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2200[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2200
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2200
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2240[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2240
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2240
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2280[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2280
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2280
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2320[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2320
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2320
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2360[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2360
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2360
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2400[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2400
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2400
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2440[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2440
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2440
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2480[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2480
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2480
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2520[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2520
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2520
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2560[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2560
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2560
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2600[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2600
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2600
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2640[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2640
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2640
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2680[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2680
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2680
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2720[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2720
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2720
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2760[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2760
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2760
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2800[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2800
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2800
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2840[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2840
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2840
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2880[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2880
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2880
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2920[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2920
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2920
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 2960[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=2960
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=2960
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3000[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3000
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3000
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3040[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3040
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3040
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3080[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3080
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3080
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3120[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3120
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3120
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3160[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3160
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3160
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3200[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3200
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3200
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3240[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3240
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3240
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3280[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3280
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3280
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3320[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3320
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3320
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3360[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3360
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3360
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3400[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3400
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3400
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3440[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3440
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3440
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3480[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3480
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3480
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3520[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3520
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3520
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3560[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3560
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3560
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3600[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3600
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3600
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3640[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3640
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3640
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3680[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3680
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3680
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3720[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3720
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3720
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3760[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3760
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3760
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3800[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3800
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3800
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3840[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3840
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3840
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3880[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3880
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3880
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3920[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3920
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3920
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 3960[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=3960
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=3960
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4000[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4000
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4000
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4040[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4040
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4040
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4080[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4080
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4080
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4120[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4120
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4120
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4160[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4160
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4160
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4200[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4200
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4200
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4240[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4240
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4240
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4280[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4280
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4280
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4320[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4320
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4320
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4360[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4360
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4360
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4400[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4400
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4400
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4440[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4440
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4440
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4480[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4480
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4480
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4520[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4520
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4520
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4560[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4560
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4560
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4600[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4600
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4600
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4640[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4640
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4640
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4680[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4680
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4680
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4720[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4720
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4720
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4760[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4760
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4760
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4800[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4800
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4800
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4840[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4840
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4840
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4880[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4880
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4880
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4920[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4920
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4920
-# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 89 	 i_din_b = 211 	 i_addr_a = 504 	 i_addr_b = 925
-#                 4960[MON] addr_a = 89 	 din_a = 504 	 dout_a = 0 	  error_a = 0 	 error_a = 0
-# [REF][A] READ  addr=504 bank=0 data=0x0 err=0 time=4960
-# [REF][B] READ  addr=504 bank=1 data=0x0 err=0 time=4960
-# ** Note: $finish    : top_testbench.sv(32)
-#    Time: 5 us  Iteration: 0  Instance: /top_testbench
+# [REF][A] READ  addr=140 bank=0 data=0x0 err=0 time=40
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=924 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 12 	 i_din_b = 0 	 i_addr_a = 41 	 i_addr_b = 0
+# [REF][A] WRITE addr=41 bank=1 enc=0x10c time=50
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 239 	 i_addr_a = 0 	 i_addr_b = 952
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 104 	 i_din_b = 0 	 i_addr_a = 70 	 i_addr_b = 0
+# [REF][B] WRITE addr=952 bank=0 enc=0xaef time=60
+# [REF][A] READ  addr=70 bank=2 data=0x0 err=0 time=60
+# [SCO] PORT_A PASS: addr=70 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 0 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 115 	 i_din_b = 0 	 i_addr_a = 132 	 i_addr_b = 0
+# [REF][A] READ  addr=132 bank=0 data=0x0 err=0 time=70
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 204 	 i_addr_a = 0 	 i_addr_b = 536
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 93 	 i_din_b = 0 	 i_addr_a = 182 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=0 data=0x0 err=0 time=80
+# [REF][A] READ  addr=182 bank=2 data=0x0 err=0 time=80
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=536 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 100 	 i_din_b = 0 	 i_addr_a = 423 	 i_addr_b = 0
+# [REF][A] READ  addr=423 bank=3 data=0x0 err=0 time=90
+# i_en_a = 0 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 163 	 i_addr_a = 0 	 i_addr_b = 889
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 115 	 i_din_b = 0 	 i_addr_a = 263 	 i_addr_b = 0
+# [REF][B] WRITE addr=889 bank=1 enc=0xa3 time=100
+# [REF][A] WRITE addr=263 bank=3 enc=0xe73 time=100
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 84 	 i_din_b = 0 	 i_addr_a = 95 	 i_addr_b = 0
+# [REF][A] WRITE addr=95 bank=3 enc=0x454 time=110
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 200 	 i_addr_a = 0 	 i_addr_b = 534
+# i_en_a = 0 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 117 	 i_din_b = 0 	 i_addr_a = 89 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=2 data=0x0 err=0 time=120
+# [REF][A] READ  addr=89 bank=1 data=0x0 err=0 time=120
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=534 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_A PASS: addr=89 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 18 	 i_din_b = 0 	 i_addr_a = 138 	 i_addr_b = 0
+# [REF][A] READ  addr=138 bank=2 data=0x0 err=0 time=130
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 225 	 i_addr_a = 0 	 i_addr_b = 729
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 57 	 i_din_b = 0 	 i_addr_a = 239 	 i_addr_b = 0
+# [REF][B] WRITE addr=729 bank=1 enc=0xee1 time=140
+# [REF][A] READ  addr=239 bank=3 data=0x0 err=0 time=140
+# [SCO] PORT_A PASS: addr=239 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 42 	 i_din_b = 0 	 i_addr_a = 176 	 i_addr_b = 0
+# [REF][A] WRITE addr=176 bank=0 enc=0x82a time=150
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 223 	 i_addr_a = 0 	 i_addr_b = 828
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 86 	 i_din_b = 0 	 i_addr_a = 411 	 i_addr_b = 0
+# [REF][B] WRITE addr=828 bank=0 enc=0x9df time=160
+# [REF][A] WRITE addr=411 bank=3 enc=0x156 time=160
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 25 	 i_din_b = 0 	 i_addr_a = 341 	 i_addr_b = 0
+# [REF][A] WRITE addr=341 bank=1 enc=0xd19 time=170
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 155 	 i_addr_a = 0 	 i_addr_b = 822
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 102 	 i_din_b = 0 	 i_addr_a = 370 	 i_addr_b = 0
+# [REF][B] WRITE addr=822 bank=2 enc=0x49b time=180
+# [REF][A] READ  addr=370 bank=2 data=0x0 err=0 time=180
+# [SCO] PORT_A PASS: addr=370 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 121 	 i_din_b = 0 	 i_addr_a = 461 	 i_addr_b = 0
+# [REF][A] READ  addr=461 bank=1 data=0x0 err=0 time=190
+# [SCO] PORT_A PASS: addr=461 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 150 	 i_addr_a = 0 	 i_addr_b = 1022
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 55 	 i_din_b = 0 	 i_addr_a = 170 	 i_addr_b = 0
+# [REF][B] WRITE addr=1022 bank=2 enc=0x696 time=200
+# [REF][A] READ  addr=170 bank=2 data=0x0 err=0 time=200
+# [SCO] PORT_A PASS: addr=170 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 22 	 i_din_b = 0 	 i_addr_a = 388 	 i_addr_b = 0
+# [REF][A] WRITE addr=388 bank=0 enc=0xa16 time=210
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 186 	 i_addr_a = 0 	 i_addr_b = 735
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 10 	 i_din_b = 0 	 i_addr_a = 322 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=220
+# [REF][A] READ  addr=322 bank=2 data=0x0 err=0 time=220
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=735 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 11 	 i_din_b = 0 	 i_addr_a = 297 	 i_addr_b = 0
+# [REF][A] WRITE addr=297 bank=1 enc=0x10b time=230
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 246 	 i_addr_a = 0 	 i_addr_b = 515
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 42 	 i_din_b = 0 	 i_addr_a = 209 	 i_addr_b = 0
+# [REF][B] WRITE addr=515 bank=3 enc=0x7f6 time=240
+# [REF][A] READ  addr=209 bank=1 data=0x0 err=0 time=240
+# [SCO] PORT_A PASS: addr=209 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 0 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 62 	 i_din_b = 0 	 i_addr_a = 114 	 i_addr_b = 0
+# [REF][A] READ  addr=114 bank=2 data=0x0 err=0 time=250
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 129 	 i_addr_a = 0 	 i_addr_b = 830
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 76 	 i_din_b = 0 	 i_addr_a = 342 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=2 data=0x0 err=0 time=260
+# [REF][A] WRITE addr=342 bank=2 enc=0xa4c time=260
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=830 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 98 	 i_din_b = 0 	 i_addr_a = 358 	 i_addr_b = 0
+# [REF][A] WRITE addr=358 bank=2 enc=0x462 time=270
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 180 	 i_addr_a = 0 	 i_addr_b = 846
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 93 	 i_din_b = 0 	 i_addr_a = 269 	 i_addr_b = 0
+# [REF][B] WRITE addr=846 bank=2 enc=0x9b4 time=280
+# [REF][A] READ  addr=269 bank=1 data=0x0 err=0 time=280
+# [SCO] PORT_A PASS: addr=269 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 26 	 i_din_b = 0 	 i_addr_a = 306 	 i_addr_b = 0
+# [REF][A] READ  addr=306 bank=2 data=0x0 err=0 time=290
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 245 	 i_addr_a = 0 	 i_addr_b = 759
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 72 	 i_din_b = 0 	 i_addr_a = 287 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=300
+# [REF][A] WRITE addr=287 bank=3 enc=0xc48 time=300
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=759 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 32 	 i_din_b = 0 	 i_addr_a = 280 	 i_addr_b = 0
+# [REF][A] WRITE addr=280 bank=0 enc=0xa20 time=310
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 146 	 i_addr_a = 0 	 i_addr_b = 578
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 85 	 i_din_b = 0 	 i_addr_a = 114 	 i_addr_b = 0
+# [REF][B] WRITE addr=578 bank=2 enc=0x92 time=320
+# [REF][A] WRITE addr=114 bank=2 enc=0x755 time=320
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 68 	 i_din_b = 0 	 i_addr_a = 323 	 i_addr_b = 0
+# [REF][A] WRITE addr=323 bank=3 enc=0xd44 time=330
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 210 	 i_addr_a = 0 	 i_addr_b = 889
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 71 	 i_din_b = 0 	 i_addr_a = 90 	 i_addr_b = 0
+# [REF][B] WRITE addr=889 bank=1 enc=0xbd2 time=340
+# [REF][A] READ  addr=90 bank=2 data=0x0 err=0 time=340
+# [SCO] PORT_A PASS: addr=90 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 23 	 i_din_b = 0 	 i_addr_a = 389 	 i_addr_b = 0
+# [REF][A] WRITE addr=389 bank=1 enc=0x917 time=350
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 226 	 i_addr_a = 0 	 i_addr_b = 883
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 61 	 i_din_b = 0 	 i_addr_a = 174 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=360
+# [REF][A] WRITE addr=174 bank=2 enc=0x13d time=360
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=883 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 6 	 i_din_b = 0 	 i_addr_a = 352 	 i_addr_b = 0
+# [REF][A] WRITE addr=352 bank=0 enc=0x306 time=370
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 216 	 i_addr_a = 0 	 i_addr_b = 955
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 75 	 i_din_b = 0 	 i_addr_a = 105 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=380
+# [REF][A] READ  addr=105 bank=1 data=0x0 err=0 time=380
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=955 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_A PASS: addr=105 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 69 	 i_din_b = 0 	 i_addr_a = 183 	 i_addr_b = 0
+# [REF][A] WRITE addr=183 bank=3 enc=0xe45 time=390
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 246 	 i_addr_a = 0 	 i_addr_b = 746
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 49 	 i_din_b = 0 	 i_addr_a = 282 	 i_addr_b = 0
+# [REF][B] WRITE addr=746 bank=2 enc=0x7f6 time=400
+# [REF][A] WRITE addr=282 bank=2 enc=0x31 time=400
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 122 	 i_din_b = 0 	 i_addr_a = 242 	 i_addr_b = 0
+# [REF][A] WRITE addr=242 bank=2 enc=0xa7a time=410
+# i_en_a = 0 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 220 	 i_addr_a = 0 	 i_addr_b = 1003
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 34 	 i_din_b = 0 	 i_addr_a = 187 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=420
+# [REF][A] WRITE addr=187 bank=3 enc=0xf22 time=420
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=1003 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 95 	 i_din_b = 0 	 i_addr_a = 498 	 i_addr_b = 0
+# [REF][A] READ  addr=498 bank=2 data=0x0 err=0 time=430
+# [SCO] PORT_A PASS: addr=498 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 146 	 i_addr_a = 0 	 i_addr_b = 574
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 80 	 i_din_b = 0 	 i_addr_a = 379 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=2 data=0x0 err=0 time=440
+# [REF][A] READ  addr=379 bank=3 data=0x0 err=0 time=440
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=574 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 66 	 i_din_b = 0 	 i_addr_a = 41 	 i_addr_b = 0
+# [REF][A] WRITE addr=41 bank=1 enc=0xe42 time=450
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 239 	 i_addr_a = 0 	 i_addr_b = 581
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 62 	 i_din_b = 0 	 i_addr_a = 306 	 i_addr_b = 0
+# [REF][B] WRITE addr=581 bank=1 enc=0xaef time=460
+# [REF][A] WRITE addr=306 bank=2 enc=0x73e time=460
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 92 	 i_din_b = 0 	 i_addr_a = 331 	 i_addr_b = 0
+# [REF][A] READ  addr=331 bank=3 data=0x0 err=0 time=470
+# [SCO] PORT_A PASS: addr=331 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 248 	 i_addr_a = 0 	 i_addr_b = 514
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 38 	 i_din_b = 0 	 i_addr_a = 239 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=2 data=0x0 err=0 time=480
+# [REF][A] WRITE addr=239 bank=3 enc=0x926 time=480
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=514 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 25 	 i_din_b = 0 	 i_addr_a = 344 	 i_addr_b = 0
+# [REF][A] WRITE addr=344 bank=0 enc=0xd19 time=490
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 255 	 i_addr_a = 0 	 i_addr_b = 945
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=1 data=0x0 err=0 time=500
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=500
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=945 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=510
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 151 	 i_addr_a = 0 	 i_addr_b = 748
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=0 data=0x0 err=0 time=520
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=520
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=748 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=530
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 136 	 i_addr_a = 0 	 i_addr_b = 799
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=540
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=540
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=799 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=550
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 247 	 i_addr_a = 0 	 i_addr_b = 732
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=0 data=0x0 err=0 time=560
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=560
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=732 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=570
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 250 	 i_addr_a = 0 	 i_addr_b = 629
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=629 bank=1 enc=0x6fa time=580
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=580
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=590
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 138 	 i_addr_a = 0 	 i_addr_b = 940
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=940 bank=0 enc=0xe8a time=600
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=600
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=610
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 140 	 i_addr_a = 0 	 i_addr_b = 570
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=570 bank=2 enc=0xd8c time=620
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=620
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=630
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 132 	 i_addr_a = 0 	 i_addr_b = 731
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=731 bank=3 enc=0xa84 time=640
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=640
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=650
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 248 	 i_addr_a = 0 	 i_addr_b = 987
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=987 bank=3 enc=0x3f8 time=660
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=660
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=670
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 125 	 i_addr_a = 0 	 i_addr_b = 961
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=1 data=0x0 err=0 time=680
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=680
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=961 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=690
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 124 	 i_addr_a = 0 	 i_addr_b = 797
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=1 data=0x0 err=0 time=700
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=700
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=797 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=710
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 220 	 i_addr_a = 0 	 i_addr_b = 828
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=828 bank=0 enc=0xfdc time=720
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=720
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=730
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 191 	 i_addr_a = 0 	 i_addr_b = 658
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=2 data=0x0 err=0 time=740
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=740
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=658 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=750
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 152 	 i_addr_a = 0 	 i_addr_b = 805
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=805 bank=1 enc=0x298 time=760
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=760
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=770
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 164 	 i_addr_a = 0 	 i_addr_b = 649
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=1 data=0x0 err=0 time=780
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=780
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=649 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=790
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 161 	 i_addr_a = 0 	 i_addr_b = 675
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=800
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=800
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=675 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=810
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 195 	 i_addr_a = 0 	 i_addr_b = 546
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=546 bank=2 enc=0x1c3 time=820
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=820
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=830
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 195 	 i_addr_a = 0 	 i_addr_b = 621
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=1 data=0x0 err=0 time=840
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=840
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=621 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=850
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 166 	 i_addr_a = 0 	 i_addr_b = 806
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=2 data=0x0 err=0 time=860
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=860
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=806 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=870
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 177 	 i_addr_a = 0 	 i_addr_b = 954
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=954 bank=2 enc=0xcb1 time=880
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=880
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=890
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 146 	 i_addr_a = 0 	 i_addr_b = 586
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=586 bank=2 enc=0x92 time=900
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=900
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=910
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 244 	 i_addr_a = 0 	 i_addr_b = 810
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=810 bank=2 enc=0x2f4 time=920
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=920
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=930
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 233 	 i_addr_a = 0 	 i_addr_b = 1014
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=2 data=0x0 err=0 time=940
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=940
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=1014 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=950
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 207 	 i_addr_a = 0 	 i_addr_b = 767
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=767 bank=3 enc=0xcf time=960
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=960
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=970
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 239 	 i_addr_a = 0 	 i_addr_b = 536
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=0 data=0x0 err=0 time=980
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=980
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=536 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=990
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 223 	 i_addr_a = 0 	 i_addr_b = 749
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=749 bank=1 enc=0x9df time=1000
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=1000
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# 
+# [SCO] Scoreboard completed 50 transactions
+# [SCO] PASS = 100, FAIL = 0
+# 
+# Generated 50 transactions
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=1010
+# ** Note: $finish    : top_testbench.sv(66)
+#    Time: 1011 ns  Iteration: 0  Instance: /top_testbench
 # 1
-# Break in Module top_testbench at top_testbench.sv line 32
-# End time: 15:35:24 on Nov 30,2025, Elapsed time: 0:00:40
+# Break in Module top_testbench at top_testbench.sv line 66
+do run.tcl
+# QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+# Start time: 12:27:30 on Dec 02,2025
+# vlog -reportprogress 300 -sv -cover bces dual_port_memory_top_module2.sv 
+# -- Compiling module hamming_encoder
+# -- Compiling module hamming_decoder
+# -- Compiling module decoder
+# -- Compiling module dual_port_memory_latency
+# -- Compiling module dual_port_multi_bank_memory
+# -- Compiling module dual_port_memory_top_module2
+# 
+# Top level modules:
+# 	dual_port_memory_top_module2
+# End time: 12:27:30 on Dec 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:27:32 on Dec 02,2025, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 6
+# vsim -gui -coverage -assertdebug -voptargs="+acc" top_testbench 
+# Start time: 12:27:32 on Dec 02,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.dual_port_vif(fast)
+# Loading work.dual_port(fast)
+# Loading work.top_testbench_sv_unit(fast)
+# Loading work.top_testbench(fast)
+# Loading work.dual_port_vif(fast__2)
+# Loading work.dual_port_memory_top_module2(fast)
+# Loading work.hamming_encoder(fast)
+# Loading work.hamming_decoder(fast)
+# Loading work.dual_port_multi_bank_memory(fast)
+# Loading work.decoder(fast)
+# Loading work.dual_port_memory_latency(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'i_din_a'. The port definition is at: dual_port_memory_top_module2.sv(46).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'i_din_b'. The port definition is at: dual_port_memory_top_module2.sv(47).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (10) for port 'i_addr_a'. The port definition is at: dual_port_memory_top_module2.sv(48).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (10) for port 'i_addr_b'. The port definition is at: dual_port_memory_top_module2.sv(49).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'o_dout_a1'. The port definition is at: dual_port_memory_top_module2.sv(50).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (12) for port 'o_dout_b1'. The port definition is at: dual_port_memory_top_module2.sv(51).
+#    Time: 0 ns  Iteration: 0  Instance: /top_testbench/dut File: top_testbench.sv Line: 33
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 4 	 i_din_b = 188 	 i_addr_a = 401 	 i_addr_b = 999
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 51 	 i_din_b = 139 	 i_addr_a = 378 	 i_addr_b = 924
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 31 	 i_din_b = 239 	 i_addr_a = 416 	 i_addr_b = 952
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 76 	 i_din_b = 204 	 i_addr_a = 140 	 i_addr_b = 536
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 12 	 i_din_b = 163 	 i_addr_a = 41 	 i_addr_b = 889
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 104 	 i_din_b = 200 	 i_addr_a = 70 	 i_addr_b = 534
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 115 	 i_din_b = 225 	 i_addr_a = 132 	 i_addr_b = 729
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 93 	 i_din_b = 223 	 i_addr_a = 182 	 i_addr_b = 828
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 100 	 i_din_b = 155 	 i_addr_a = 423 	 i_addr_b = 822
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 115 	 i_din_b = 150 	 i_addr_a = 263 	 i_addr_b = 1022
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 84 	 i_din_b = 186 	 i_addr_a = 95 	 i_addr_b = 735
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 117 	 i_din_b = 246 	 i_addr_a = 89 	 i_addr_b = 515
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 18 	 i_din_b = 129 	 i_addr_a = 138 	 i_addr_b = 830
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 57 	 i_din_b = 180 	 i_addr_a = 239 	 i_addr_b = 846
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 42 	 i_din_b = 245 	 i_addr_a = 176 	 i_addr_b = 759
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 86 	 i_din_b = 146 	 i_addr_a = 411 	 i_addr_b = 578
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 25 	 i_din_b = 210 	 i_addr_a = 341 	 i_addr_b = 889
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 102 	 i_din_b = 226 	 i_addr_a = 370 	 i_addr_b = 883
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 121 	 i_din_b = 216 	 i_addr_a = 461 	 i_addr_b = 955
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 55 	 i_din_b = 246 	 i_addr_a = 170 	 i_addr_b = 746
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 22 	 i_din_b = 220 	 i_addr_a = 388 	 i_addr_b = 1003
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 10 	 i_din_b = 146 	 i_addr_a = 322 	 i_addr_b = 574
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 11 	 i_din_b = 239 	 i_addr_a = 297 	 i_addr_b = 581
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 42 	 i_din_b = 248 	 i_addr_a = 209 	 i_addr_b = 514
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 62 	 i_din_b = 255 	 i_addr_a = 114 	 i_addr_b = 945
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 76 	 i_din_b = 151 	 i_addr_a = 342 	 i_addr_b = 748
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 98 	 i_din_b = 136 	 i_addr_a = 358 	 i_addr_b = 799
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 93 	 i_din_b = 247 	 i_addr_a = 269 	 i_addr_b = 732
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 26 	 i_din_b = 250 	 i_addr_a = 306 	 i_addr_b = 629
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 72 	 i_din_b = 138 	 i_addr_a = 287 	 i_addr_b = 940
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 32 	 i_din_b = 140 	 i_addr_a = 280 	 i_addr_b = 570
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 85 	 i_din_b = 132 	 i_addr_a = 114 	 i_addr_b = 731
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 68 	 i_din_b = 248 	 i_addr_a = 323 	 i_addr_b = 987
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 71 	 i_din_b = 125 	 i_addr_a = 90 	 i_addr_b = 961
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 23 	 i_din_b = 124 	 i_addr_a = 389 	 i_addr_b = 797
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 61 	 i_din_b = 220 	 i_addr_a = 174 	 i_addr_b = 828
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 6 	 i_din_b = 191 	 i_addr_a = 352 	 i_addr_b = 658
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 75 	 i_din_b = 152 	 i_addr_a = 105 	 i_addr_b = 805
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 69 	 i_din_b = 164 	 i_addr_a = 183 	 i_addr_b = 649
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 49 	 i_din_b = 161 	 i_addr_a = 282 	 i_addr_b = 675
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 122 	 i_din_b = 195 	 i_addr_a = 242 	 i_addr_b = 546
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 34 	 i_din_b = 195 	 i_addr_a = 187 	 i_addr_b = 621
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 95 	 i_din_b = 166 	 i_addr_a = 498 	 i_addr_b = 806
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 80 	 i_din_b = 177 	 i_addr_a = 379 	 i_addr_b = 954
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 66 	 i_din_b = 146 	 i_addr_a = 41 	 i_addr_b = 586
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 62 	 i_din_b = 244 	 i_addr_a = 306 	 i_addr_b = 810
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 92 	 i_din_b = 233 	 i_addr_a = 331 	 i_addr_b = 1014
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 1 	 i_din_a = 38 	 i_din_b = 207 	 i_addr_a = 239 	 i_addr_b = 767
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 25 	 i_din_b = 239 	 i_addr_a = 344 	 i_addr_b = 536
+# i_en_a = 1 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 5 	 i_din_b = 223 	 i_addr_a = 10 	 i_addr_b = 749
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 4 	 i_din_b = 0 	 i_addr_a = 401 	 i_addr_b = 0
+# [REF][A] WRITE addr=401 bank=1 enc=0x604 time=10
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 188 	 i_addr_a = 0 	 i_addr_b = 999
+# i_en_a = 0 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 51 	 i_din_b = 0 	 i_addr_a = 378 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=20
+# [REF][A] WRITE addr=378 bank=2 enc=0x533 time=20
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=999 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 31 	 i_din_b = 0 	 i_addr_a = 416 	 i_addr_b = 0
+# [REF][A] READ  addr=416 bank=0 data=0x0 err=0 time=30
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 139 	 i_addr_a = 0 	 i_addr_b = 924
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 76 	 i_din_b = 0 	 i_addr_a = 140 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=0 data=0x0 err=0 time=40
+# [REF][A] READ  addr=140 bank=0 data=0x0 err=0 time=40
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=924 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 12 	 i_din_b = 0 	 i_addr_a = 41 	 i_addr_b = 0
+# [REF][A] WRITE addr=41 bank=1 enc=0x10c time=50
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 239 	 i_addr_a = 0 	 i_addr_b = 952
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 104 	 i_din_b = 0 	 i_addr_a = 70 	 i_addr_b = 0
+# [REF][B] WRITE addr=952 bank=0 enc=0xaef time=60
+# [REF][A] READ  addr=70 bank=2 data=0x0 err=0 time=60
+# [SCO] PORT_A PASS: addr=70 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 0 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 115 	 i_din_b = 0 	 i_addr_a = 132 	 i_addr_b = 0
+# [REF][A] READ  addr=132 bank=0 data=0x0 err=0 time=70
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 204 	 i_addr_a = 0 	 i_addr_b = 536
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 93 	 i_din_b = 0 	 i_addr_a = 182 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=0 data=0x0 err=0 time=80
+# [REF][A] READ  addr=182 bank=2 data=0x0 err=0 time=80
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=536 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 100 	 i_din_b = 0 	 i_addr_a = 423 	 i_addr_b = 0
+# [REF][A] READ  addr=423 bank=3 data=0x0 err=0 time=90
+# i_en_a = 0 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 163 	 i_addr_a = 0 	 i_addr_b = 889
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 115 	 i_din_b = 0 	 i_addr_a = 263 	 i_addr_b = 0
+# [REF][B] WRITE addr=889 bank=1 enc=0xa3 time=100
+# [REF][A] WRITE addr=263 bank=3 enc=0xe73 time=100
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 84 	 i_din_b = 0 	 i_addr_a = 95 	 i_addr_b = 0
+# [REF][A] WRITE addr=95 bank=3 enc=0x454 time=110
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 200 	 i_addr_a = 0 	 i_addr_b = 534
+# i_en_a = 0 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 117 	 i_din_b = 0 	 i_addr_a = 89 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=2 data=0x0 err=0 time=120
+# [REF][A] READ  addr=89 bank=1 data=0x0 err=0 time=120
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=534 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_A PASS: addr=89 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 18 	 i_din_b = 0 	 i_addr_a = 138 	 i_addr_b = 0
+# [REF][A] READ  addr=138 bank=2 data=0x0 err=0 time=130
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 225 	 i_addr_a = 0 	 i_addr_b = 729
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 57 	 i_din_b = 0 	 i_addr_a = 239 	 i_addr_b = 0
+# [REF][B] WRITE addr=729 bank=1 enc=0xee1 time=140
+# [REF][A] READ  addr=239 bank=3 data=0x0 err=0 time=140
+# [SCO] PORT_A PASS: addr=239 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 42 	 i_din_b = 0 	 i_addr_a = 176 	 i_addr_b = 0
+# [REF][A] WRITE addr=176 bank=0 enc=0x82a time=150
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 223 	 i_addr_a = 0 	 i_addr_b = 828
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 86 	 i_din_b = 0 	 i_addr_a = 411 	 i_addr_b = 0
+# [REF][B] WRITE addr=828 bank=0 enc=0x9df time=160
+# [REF][A] WRITE addr=411 bank=3 enc=0x156 time=160
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 25 	 i_din_b = 0 	 i_addr_a = 341 	 i_addr_b = 0
+# [REF][A] WRITE addr=341 bank=1 enc=0xd19 time=170
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 155 	 i_addr_a = 0 	 i_addr_b = 822
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 102 	 i_din_b = 0 	 i_addr_a = 370 	 i_addr_b = 0
+# [REF][B] WRITE addr=822 bank=2 enc=0x49b time=180
+# [REF][A] READ  addr=370 bank=2 data=0x0 err=0 time=180
+# [SCO] PORT_A PASS: addr=370 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 121 	 i_din_b = 0 	 i_addr_a = 461 	 i_addr_b = 0
+# [REF][A] READ  addr=461 bank=1 data=0x0 err=0 time=190
+# [SCO] PORT_A PASS: addr=461 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 150 	 i_addr_a = 0 	 i_addr_b = 1022
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 55 	 i_din_b = 0 	 i_addr_a = 170 	 i_addr_b = 0
+# [REF][B] WRITE addr=1022 bank=2 enc=0x696 time=200
+# [REF][A] READ  addr=170 bank=2 data=0x0 err=0 time=200
+# [SCO] PORT_A PASS: addr=170 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 22 	 i_din_b = 0 	 i_addr_a = 388 	 i_addr_b = 0
+# [REF][A] WRITE addr=388 bank=0 enc=0xa16 time=210
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 186 	 i_addr_a = 0 	 i_addr_b = 735
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 10 	 i_din_b = 0 	 i_addr_a = 322 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=220
+# [REF][A] READ  addr=322 bank=2 data=0x0 err=0 time=220
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=735 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 11 	 i_din_b = 0 	 i_addr_a = 297 	 i_addr_b = 0
+# [REF][A] WRITE addr=297 bank=1 enc=0x10b time=230
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 246 	 i_addr_a = 0 	 i_addr_b = 515
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 42 	 i_din_b = 0 	 i_addr_a = 209 	 i_addr_b = 0
+# [REF][B] WRITE addr=515 bank=3 enc=0x7f6 time=240
+# [REF][A] READ  addr=209 bank=1 data=0x0 err=0 time=240
+# [SCO] PORT_A PASS: addr=209 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 0 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 62 	 i_din_b = 0 	 i_addr_a = 114 	 i_addr_b = 0
+# [REF][A] READ  addr=114 bank=2 data=0x0 err=0 time=250
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 129 	 i_addr_a = 0 	 i_addr_b = 830
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 76 	 i_din_b = 0 	 i_addr_a = 342 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=2 data=0x0 err=0 time=260
+# [REF][A] WRITE addr=342 bank=2 enc=0xa4c time=260
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=830 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 98 	 i_din_b = 0 	 i_addr_a = 358 	 i_addr_b = 0
+# [REF][A] WRITE addr=358 bank=2 enc=0x462 time=270
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 180 	 i_addr_a = 0 	 i_addr_b = 846
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 93 	 i_din_b = 0 	 i_addr_a = 269 	 i_addr_b = 0
+# [REF][B] WRITE addr=846 bank=2 enc=0x9b4 time=280
+# [REF][A] READ  addr=269 bank=1 data=0x0 err=0 time=280
+# [SCO] PORT_A PASS: addr=269 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 26 	 i_din_b = 0 	 i_addr_a = 306 	 i_addr_b = 0
+# [REF][A] READ  addr=306 bank=2 data=0x0 err=0 time=290
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 245 	 i_addr_a = 0 	 i_addr_b = 759
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 72 	 i_din_b = 0 	 i_addr_a = 287 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=300
+# [REF][A] WRITE addr=287 bank=3 enc=0xc48 time=300
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=759 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 32 	 i_din_b = 0 	 i_addr_a = 280 	 i_addr_b = 0
+# [REF][A] WRITE addr=280 bank=0 enc=0xa20 time=310
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 146 	 i_addr_a = 0 	 i_addr_b = 578
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 85 	 i_din_b = 0 	 i_addr_a = 114 	 i_addr_b = 0
+# [REF][B] WRITE addr=578 bank=2 enc=0x92 time=320
+# [REF][A] WRITE addr=114 bank=2 enc=0x755 time=320
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 68 	 i_din_b = 0 	 i_addr_a = 323 	 i_addr_b = 0
+# [REF][A] WRITE addr=323 bank=3 enc=0xd44 time=330
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 210 	 i_addr_a = 0 	 i_addr_b = 889
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 71 	 i_din_b = 0 	 i_addr_a = 90 	 i_addr_b = 0
+# [REF][B] WRITE addr=889 bank=1 enc=0xbd2 time=340
+# [REF][A] READ  addr=90 bank=2 data=0x0 err=0 time=340
+# [SCO] PORT_A PASS: addr=90 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 23 	 i_din_b = 0 	 i_addr_a = 389 	 i_addr_b = 0
+# [REF][A] WRITE addr=389 bank=1 enc=0x917 time=350
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 226 	 i_addr_a = 0 	 i_addr_b = 883
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 61 	 i_din_b = 0 	 i_addr_a = 174 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=360
+# [REF][A] WRITE addr=174 bank=2 enc=0x13d time=360
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=883 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 6 	 i_din_b = 0 	 i_addr_a = 352 	 i_addr_b = 0
+# [REF][A] WRITE addr=352 bank=0 enc=0x306 time=370
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 216 	 i_addr_a = 0 	 i_addr_b = 955
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 75 	 i_din_b = 0 	 i_addr_a = 105 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=380
+# [REF][A] READ  addr=105 bank=1 data=0x0 err=0 time=380
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=955 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_A PASS: addr=105 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 69 	 i_din_b = 0 	 i_addr_a = 183 	 i_addr_b = 0
+# [REF][A] WRITE addr=183 bank=3 enc=0xe45 time=390
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 246 	 i_addr_a = 0 	 i_addr_b = 746
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 49 	 i_din_b = 0 	 i_addr_a = 282 	 i_addr_b = 0
+# [REF][B] WRITE addr=746 bank=2 enc=0x7f6 time=400
+# [REF][A] WRITE addr=282 bank=2 enc=0x31 time=400
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 122 	 i_din_b = 0 	 i_addr_a = 242 	 i_addr_b = 0
+# [REF][A] WRITE addr=242 bank=2 enc=0xa7a time=410
+# i_en_a = 0 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 220 	 i_addr_a = 0 	 i_addr_b = 1003
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 34 	 i_din_b = 0 	 i_addr_a = 187 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=420
+# [REF][A] WRITE addr=187 bank=3 enc=0xf22 time=420
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=1003 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 95 	 i_din_b = 0 	 i_addr_a = 498 	 i_addr_b = 0
+# [REF][A] READ  addr=498 bank=2 data=0x0 err=0 time=430
+# [SCO] PORT_A PASS: addr=498 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 146 	 i_addr_a = 0 	 i_addr_b = 574
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 80 	 i_din_b = 0 	 i_addr_a = 379 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=2 data=0x0 err=0 time=440
+# [REF][A] READ  addr=379 bank=3 data=0x0 err=0 time=440
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=574 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 66 	 i_din_b = 0 	 i_addr_a = 41 	 i_addr_b = 0
+# [REF][A] WRITE addr=41 bank=1 enc=0xe42 time=450
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 239 	 i_addr_a = 0 	 i_addr_b = 581
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 62 	 i_din_b = 0 	 i_addr_a = 306 	 i_addr_b = 0
+# [REF][B] WRITE addr=581 bank=1 enc=0xaef time=460
+# [REF][A] WRITE addr=306 bank=2 enc=0x73e time=460
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 92 	 i_din_b = 0 	 i_addr_a = 331 	 i_addr_b = 0
+# [REF][A] READ  addr=331 bank=3 data=0x0 err=0 time=470
+# [SCO] PORT_A PASS: addr=331 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 248 	 i_addr_a = 0 	 i_addr_b = 514
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 38 	 i_din_b = 0 	 i_addr_a = 239 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=2 data=0x0 err=0 time=480
+# [REF][A] WRITE addr=239 bank=3 enc=0x926 time=480
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=514 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 1 	 i_we_b = 0 	 i_din_a = 25 	 i_din_b = 0 	 i_addr_a = 344 	 i_addr_b = 0
+# [REF][A] WRITE addr=344 bank=0 enc=0xd19 time=490
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 255 	 i_addr_a = 0 	 i_addr_b = 945
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=1 data=0x0 err=0 time=500
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=500
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=945 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=510
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 151 	 i_addr_a = 0 	 i_addr_b = 748
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=0 data=0x0 err=0 time=520
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=520
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=748 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=530
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 136 	 i_addr_a = 0 	 i_addr_b = 799
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=540
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=540
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=799 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=550
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 247 	 i_addr_a = 0 	 i_addr_b = 732
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=0 data=0x0 err=0 time=560
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=560
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=732 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=570
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 250 	 i_addr_a = 0 	 i_addr_b = 629
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=629 bank=1 enc=0x6fa time=580
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=580
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=590
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 138 	 i_addr_a = 0 	 i_addr_b = 940
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=940 bank=0 enc=0xe8a time=600
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=600
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=610
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 140 	 i_addr_a = 0 	 i_addr_b = 570
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=570 bank=2 enc=0xd8c time=620
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=620
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=630
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 132 	 i_addr_a = 0 	 i_addr_b = 731
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=731 bank=3 enc=0xa84 time=640
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=640
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=650
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 248 	 i_addr_a = 0 	 i_addr_b = 987
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=987 bank=3 enc=0x3f8 time=660
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=660
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=670
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 125 	 i_addr_a = 0 	 i_addr_b = 961
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=1 data=0x0 err=0 time=680
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=680
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=961 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=690
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 124 	 i_addr_a = 0 	 i_addr_b = 797
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=1 data=0x0 err=0 time=700
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=700
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=797 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=710
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 220 	 i_addr_a = 0 	 i_addr_b = 828
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=828 bank=0 enc=0xfdc time=720
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=720
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=730
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 191 	 i_addr_a = 0 	 i_addr_b = 658
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=2 data=0x0 err=0 time=740
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=740
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=658 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=750
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 152 	 i_addr_a = 0 	 i_addr_b = 805
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=805 bank=1 enc=0x298 time=760
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=760
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=770
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 164 	 i_addr_a = 0 	 i_addr_b = 649
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=1 data=0x0 err=0 time=780
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=780
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=649 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=790
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 161 	 i_addr_a = 0 	 i_addr_b = 675
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=3 data=0x0 err=0 time=800
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=800
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=675 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=810
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 195 	 i_addr_a = 0 	 i_addr_b = 546
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=546 bank=2 enc=0x1c3 time=820
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=820
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=830
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 195 	 i_addr_a = 0 	 i_addr_b = 621
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=1 data=0x0 err=0 time=840
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=840
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=621 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=850
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 166 	 i_addr_a = 0 	 i_addr_b = 806
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=2 data=0x0 err=0 time=860
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=860
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=806 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=870
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 177 	 i_addr_a = 0 	 i_addr_b = 954
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=954 bank=2 enc=0xcb1 time=880
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=880
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=890
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 146 	 i_addr_a = 0 	 i_addr_b = 586
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=586 bank=2 enc=0x92 time=900
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=900
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=910
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 244 	 i_addr_a = 0 	 i_addr_b = 810
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=810 bank=2 enc=0x2f4 time=920
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=920
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=930
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 233 	 i_addr_a = 0 	 i_addr_b = 1014
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=2 data=0x0 err=0 time=940
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=940
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=1014 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=950
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 207 	 i_addr_a = 0 	 i_addr_b = 767
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=767 bank=3 enc=0xcf time=960
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=960
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=970
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 0 	 i_din_b = 239 	 i_addr_a = 0 	 i_addr_b = 536
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] READ  addr=0 bank=0 data=0x0 err=0 time=980
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=980
+# [SCO] PORT_A PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=536 din=0 dout=0 err_ref=0 err_mon=0
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=990
+# i_en_a = 0 	 i_en_b = 1 	 i_we_a = 0 	 i_we_b = 1 	 i_din_a = 0 	 i_din_b = 223 	 i_addr_a = 0 	 i_addr_b = 749
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][B] WRITE addr=749 bank=1 enc=0x9df time=1000
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=1000
+# [SCO] PORT_A PASS: addr=10 din=0 dout=0 err_ref=0 err_mon=0
+# [SCO] PORT_B PASS: addr=0 din=0 dout=0 err_ref=0 err_mon=0
+# 
+# [SCO] Scoreboard completed 50 transactions
+# [SCO] PASS = 100, FAIL = 0
+# 
+# Generated 50 transactions
+# i_en_a = 1 	 i_en_b = 0 	 i_we_a = 0 	 i_we_b = 0 	 i_din_a = 5 	 i_din_b = 0 	 i_addr_a = 10 	 i_addr_b = 0
+# [REF][A] READ  addr=10 bank=2 data=0x0 err=0 time=1010
+# ** Note: $finish    : top_testbench.sv(66)
+#    Time: 1011 ns  Iteration: 0  Instance: /top_testbench
+# 1
+# Break in Module top_testbench at top_testbench.sv line 66
+# QuestaSim-64 vcover 2021.2_1 Coverage Utility 2021.05 May 15 2021
+# Start time: 12:27:37 on Dec 02,2025
+# vcover report -html -output covhtmlreport -details -assert -directive -cvg -code bces -threshL 50 -threshH 90 cov.ucdb 
+# End time: 12:27:39 on Dec 02,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# 11772
+# End time: 12:27:52 on Dec 02,2025, Elapsed time: 0:00:20
 # Errors: 0, Warnings: 6

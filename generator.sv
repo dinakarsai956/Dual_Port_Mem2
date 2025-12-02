@@ -4,13 +4,18 @@
 //  driver class by using put method .
 //
 ///////////////////////////////////////////////////////////////////////////
-
+`ifndef GENERATOR_SV
+`define GENERATOR_SV
 class generator;
   transaction t;
-  mailbox #(transaction) gen2drv;  // mailbox for using transactions from one class to another
+  mailbox #(transaction)
+      gen2drv_a, gen2drv_b;  // mailboxes for using transactions from one class to another
+  //  int count = 0;
   int num_transactions = 50;
-  function new(mailbox#(transaction) gen2drv);
-    this.gen2drv = gen2drv;
+  // event gen_done;
+  function new(mailbox#(transaction) gen2drv_a, gen2drv_b);
+    this.gen2drv_a = gen2drv_a;
+    this.gen2drv_b = gen2drv_b;
   endfunction
 
   task run();
@@ -21,8 +26,9 @@ class generator;
       end
       t.display("GEN");
 
-      gen2drv.put(t);
+      gen2drv_a.put(t);
+      gen2drv_b.put(t);
     end
-    $display("[GEN] number of transactions ", num_transactions);
   endtask
 endclass
+`endif

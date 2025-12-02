@@ -4,7 +4,7 @@
 // Here we are creating interface for dual port memory 
 /////////////////////////////////////////////////////////////////////////////////////////
 
-interface dual_port #(
+interface dual_port_vif #(
     parameter WIDTH = 12,
     parameter ADDR_WIDTH = 10
 );

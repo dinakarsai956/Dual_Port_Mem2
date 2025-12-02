@@ -1,0 +1,2 @@
+var g_data = ["","interface.sv","pkg.sv","packet.sv","transaction.sv","generator.sv","driver.sv","driver_b.sv","monitor.sv","monitor_b.sv","reference.sv","scoreboard.sv","environment.sv","test.sv","top_testbench.sv","dual_port_memory_top_module2.sv","hamming_encoder.sv","hamming_decoder.sv","dual_port_multi_bank_memory.sv","decoder.sv","dual_port_memory_latency.sv"];
+processSrcNamesData(g_data);

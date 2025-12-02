@@ -4,7 +4,8 @@
 //  by using constraint . Here we are creating for dual port memory here we
 //  are creating a parametrized inputs by randomization pre qualifiers.
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-
+`ifndef TRANSACTION_SV
+`define TRANSACTION_SV
 class transaction;
   rand bit i_en_a, i_en_b;  // enable inputs for port_A, port_B
   rand bit i_we_a, i_we_b;  // write enable inputs for port_A, port_B
@@ -49,3 +50,4 @@ class transaction;
   endfunction
 
 endclass
+`endif

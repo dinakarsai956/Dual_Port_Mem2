@@ -5,30 +5,26 @@
 // in driver class.
 //
 /////////////////////////////////////////////////////////////////////////////
-
-class driver;
+`ifndef DRIVER_A_SV
+`define DRIVER_A_SV
+class driver_a;
   // Mailbox from generator to driver
-  mailbox #(transaction) gen2drv;
-  virtual dual_port #(12, 10) dp;
+  mailbox #(transaction) gen2drv_a;
+  virtual dual_port_vif  dp_vif;
 
   // Constructor: keep parameter order consistent with the member above.
-  function new(mailbox#(transaction) gen2drv, virtual dual_port #(12, 10) dp);
-    this.gen2drv = gen2drv;
-    this.dp      = dp;
+  function new(mailbox#(transaction) gen2drv_a, virtual dual_port_vif dp_vif);
+    this.gen2drv_a = gen2drv_a;
+    this.dp_vif    = dp_vif;
   endfunction
 
   // Optional: initial defaults (can be moved to run())
   task init_defaults();
     // Drive safe defaults before starting
-    dp.i_en_a   <= 1'b0;
-    dp.i_we_a   <= 1'b0;
-    dp.i_addr_a <= '0;
-    dp.i_din_a  <= '0;
-
-    dp.i_en_b   <= 1'b0;
-    dp.i_we_b   <= 1'b0;
-    dp.i_addr_b <= '0;
-    dp.i_din_b  <= '0;
+    dp_vif.i_en_a   <= 1'b0;
+    dp_vif.i_we_a   <= 1'b0;
+    dp_vif.i_addr_a <= '0;
+    dp_vif.i_din_a  <= '0;
   endtask
 
   task run();
@@ -39,20 +35,13 @@ class driver;
 
     forever begin
       // Block until we receive the next item
-      gen2drv.get(t);
-      @(negedge dp.i_clk_a);
-      dp.i_en_a   <= t.i_en_a;
-      dp.i_we_a   <= t.i_we_a;
-      dp.i_din_a  <= t.i_din_a;
-      dp.i_addr_a <= t.i_addr_a;
-
-      @(negedge dp.i_clk_b);
-      dp.i_en_b   <= t.i_en_b;
-      dp.i_we_b   <= t.i_we_b;
-      dp.i_din_b  <= t.i_din_b;
-      dp.i_addr_b <= t.i_addr_b;
-
+      gen2drv_a.get(t);
+      dp_vif.i_en_a   <= t.i_en_a;
+      dp_vif.i_we_a   <= t.i_we_a;
+      dp_vif.i_din_a  <= t.i_din_a;
+      dp_vif.i_addr_a <= t.i_addr_a;
+      @(negedge dp_vif.i_clk_a);
     end
   endtask
 endclass
-
+`endif
